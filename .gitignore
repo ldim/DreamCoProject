@@ -1,3 +1,6 @@
-.idea/workspace.xml
-.idea/workspace.xml
 .idea
+out
+target
+*.iml
+log
+*.patch
