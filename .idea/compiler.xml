@@ -26,7 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DreamCoProject" target="1.5" />
+      <module name="DreamCoProject" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
