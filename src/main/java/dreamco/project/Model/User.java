@@ -1,4 +1,4 @@
-package dreamco.project.Model;
+package dreamco.project.model;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

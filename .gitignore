@@ -5,3 +5,5 @@ target
 log
 *.patch
 .idea/workspace.xml
+**/.idea/workspace.xml
+
