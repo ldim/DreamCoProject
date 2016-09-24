@@ -13,10 +13,13 @@ public class UserDesire {
 
     private final String desireDescription;
 
+    private final String barterPropose;
 
-    public UserDesire(LocalDateTime dateTime, String desireDescription) {
+
+    public UserDesire(LocalDateTime dateTime, String desireDescription, String barterPropose) {
         this.dateTime = dateTime;
         this.desireDescription = desireDescription;
+        this.barterPropose = barterPropose;
     }
 
     public LocalDateTime getDateTime() {
@@ -36,5 +39,7 @@ public class UserDesire {
         return dateTime.toLocalTime();
     }
 
-
+    public String getBarterPropose() {
+        return barterPropose;
+    }
 }

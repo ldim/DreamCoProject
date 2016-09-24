@@ -1,5 +1,6 @@
 package dreamco.project.web;
 
+import dreamco.project.util.UserDesireUtil;
 import org.slf4j.Logger;
 
 import javax.servlet.ServletException;
@@ -17,7 +18,8 @@ public class UserServlet extends HttpServlet {
     private static final Logger LOG = getLogger(UserServlet.class);
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         LOG.debug("redirect to userList");
-        //request.getRequestDispatcher("/userList.jsp").forward(request, response);
-        response.sendRedirect("userList.jsp");
+        request.setAttribute("userList", UserDesireUtil.getBARTER());
+        request.getRequestDispatcher("/userList.jsp").forward(request, response);
+        //response.sendRedirect("userList.jsp");
     }
 }
