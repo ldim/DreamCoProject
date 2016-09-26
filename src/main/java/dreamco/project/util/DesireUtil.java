@@ -19,6 +19,8 @@ public class DesireUtil {
             new Desire(LocalDateTime.of(2016, Month.SEPTEMBER, 17, 6, 35), "Need some house in California", "Do something for you")
     );
 
+    public static final int DEFAULT_BARTER = 3;
+
     public static List<Desire> getBARTER() {
         return BARTER;
     }
