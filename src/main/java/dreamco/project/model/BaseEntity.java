@@ -1,8 +1,8 @@
 package dreamco.project.model;
 
 /**
- * User: gkislin
- * Date: 22.08.2014
+ * User: Artyom
+ * Date: 19.09.2016
  */
 public class BaseEntity {
     protected Integer id;

@@ -4,8 +4,8 @@ package dreamco.project.service;
 import dreamco.project.repository.DesireRepository;
 
 /**
- * GKislin
- * 06.03.2015.
+ * User: Artyom
+ * Date: 19.09.2016
  */
 public class MealServiceImpl implements DesireService {
 

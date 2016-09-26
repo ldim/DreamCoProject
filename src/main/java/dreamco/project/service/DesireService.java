@@ -1,8 +1,8 @@
 package dreamco.project.service;
 
 /**
- * GKislin
- * 15.06.2015.
+ * User: Artyom
+ * Date: 19.09.2016
  */
 public interface DesireService {
 }

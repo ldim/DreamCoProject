@@ -10,8 +10,8 @@ import dreamco.project.util.exception.NotFoundException;
 import java.util.List;
 
 /**
- * GKislin
- * 06.03.2015.
+ * User: Artyom
+ * Date: 19.09.2016
  */
 public class UserServiceImpl implements UserService {
 
