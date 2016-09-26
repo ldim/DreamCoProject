@@ -1,42 +1,99 @@
 package dreamco.project.model;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import dreamco.project.util.DesireUtil;
+
+
+import java.util.Date;
+import java.util.EnumSet;
+import java.util.Set;
 
 /**
- * Created by Artyom on 20.09.2016.
+ * User: Artyom
+ * Date: 19.09.2016
  */
-public class User {
-    private AtomicInteger userId;
-    private int userPassword;
-    private String userEmail;
+public class User extends NamedEntity {
 
-    public User(AtomicInteger userId, int userPassword, String userEmail) {
-        this.userId = userId;
-        this.userPassword = userPassword;
-        this.userEmail = userEmail;
+    protected String email;
+
+    protected String password;
+
+    protected boolean enabled = true;
+
+    protected Date registered = new Date();
+
+    protected Set<Role> roles;
+
+    protected int countBarter = DesireUtil.DEFAULT_BARTER;
+
+    public User() {
     }
 
-    public AtomicInteger getUserId() {
-        return userId;
+    public User(Integer id, String name, String email, String password, Role role, Role... roles) {
+        this(id, name, email, password, DesireUtil.DEFAULT_BARTER, true, EnumSet.of(role, roles));
     }
 
-    public int getUserPassword() {
-        return userPassword;
+    public User(Integer id, String name, String email, String password, int countBarter, boolean enabled, Set<Role> roles) {
+        super(id, name);
+        this.email = email;
+        this.password = password;
+        this.countBarter = countBarter;
+        this.enabled = enabled;
+        this.roles = roles;
     }
 
-    public String getUserEmail() {
-        return userEmail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUserId(AtomicInteger userId) {
-        this.userId = userId;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
-    public void setUserPassword(int userPassword) {
-        this.userPassword = userPassword;
+    public Date getRegistered() {
+        return registered;
+    }
+
+    public void setRegistered(Date registered) {
+        this.registered = registered;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public int getCountBarter() {
+        return countBarter;
+    }
+
+    public void setCountBarter(int countBarter) {
+        this.countBarter = countBarter;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String toString() {
+        return "User (" +
+                "id=" + id +
+                ", email=" + email +
+                ", name=" + name +
+                ", enabled=" + enabled +
+                ", roles=" + roles +
+                ", countBarter=" + countBarter +
+                ')';
     }
 }

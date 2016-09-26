@@ -6,6 +6,8 @@ import dreamco.project.model.User;
 import dreamco.project.repository.UserRepository;
 import dreamco.project.util.exception.ExceptionUtil;
 import dreamco.project.util.exception.NotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,8 +15,9 @@ import java.util.List;
  * User: Artyom
  * Date: 19.09.2016
  */
+@Service
 public class UserServiceImpl implements UserService {
-
+    @Autowired
     private UserRepository repository;
 
     public User save(User user) {

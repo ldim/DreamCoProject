@@ -7,7 +7,7 @@ import java.time.LocalTime;
 /**
  * Created by Artyom on 19.09.2016.
  */
-public class Desire {
+public class Desire { // Описание параметров бартера
     private Integer id;
 
     private final LocalDateTime dateTime;

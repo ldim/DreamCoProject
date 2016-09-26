@@ -3,6 +3,7 @@ package dreamco.project.web.user;
 
 
 import dreamco.project.model.User;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * User: Artyom
  * Date: 19.09.2016
  */
+@Controller
 public class AdminRestController extends AbstractUserController {
 
     public List<User> getAll() {

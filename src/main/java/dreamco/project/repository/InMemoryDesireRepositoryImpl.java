@@ -2,6 +2,7 @@ package dreamco.project.repository;
 
 import dreamco.project.model.Desire;
 import dreamco.project.util.DesireUtil;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.Map;
@@ -11,6 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * Created by Artyom on 25.09.2016.
  */
+@Repository
 public class InMemoryDesireRepositoryImpl implements DesireRepository {
     private Map<Integer, Desire> repository = new ConcurrentHashMap<>();
     private AtomicInteger counter = new AtomicInteger(0);

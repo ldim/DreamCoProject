@@ -3,11 +3,13 @@ package dreamco.project.web.user;
 
 import dreamco.project.AuthorizedUser;
 import dreamco.project.model.User;
+import org.springframework.stereotype.Controller;
 
 /**
  * User: Artyom
  * Date: 19.09.2016
  */
+@Controller
 public class ProfileRestController extends AbstractUserController {
 
     public User get() {

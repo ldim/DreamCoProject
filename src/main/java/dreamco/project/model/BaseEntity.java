@@ -4,7 +4,7 @@ package dreamco.project.model;
  * User: Artyom
  * Date: 19.09.2016
  */
-public class BaseEntity {
+public class BaseEntity { // Класс для хранения сущностей
     protected Integer id;
 
     public BaseEntity() {

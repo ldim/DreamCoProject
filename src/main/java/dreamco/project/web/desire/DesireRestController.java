@@ -1,5 +1,4 @@
-package dreamco.project.web.meal;
-
+package dreamco.project.web.desire;
 
 import dreamco.project.service.DesireService;
 
@@ -7,7 +6,8 @@ import dreamco.project.service.DesireService;
  * User: Artyom
  * Date: 19.09.2016
  */
-public class MealRestController {
+
+public class DesireRestController {
     private DesireService service;
 
 }

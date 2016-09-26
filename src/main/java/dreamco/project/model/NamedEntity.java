@@ -4,7 +4,7 @@ package dreamco.project.model;
  * User: Artyom
  * Date: 19.09.2016
  */
-public class NamedEntity extends BaseEntity {
+public class NamedEntity extends BaseEntity { // Именованная сущность
 
     protected String name;
 
