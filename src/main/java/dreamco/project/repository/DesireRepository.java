@@ -8,11 +8,15 @@ import java.util.Collection;
  * Created by Artyom on 25.09.2016.
  */
 public interface DesireRepository {
-    Desire save(Desire desire);
+    // null if updated meal do not belong to userId
+    Desire save(Desire Desire, int userId);
 
-    void delete(int id);
+    // false if meal do not belong to userId
+    boolean delete(int id, int userId);
 
-    Desire get(int id);
+    // null if meal do not belong to userId
+    Desire get(int id, int userId);
 
-    Collection<Desire> getAll();
+    // ORDERED dateTime
+    Collection<Desire> getAll(int userId);
 }

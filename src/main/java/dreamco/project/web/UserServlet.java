@@ -1,8 +1,9 @@
 package dreamco.project.web;
 
+import dreamco.project.AuthorizedUser;
 import dreamco.project.model.Desire;
 import dreamco.project.repository.DesireRepository;
-import dreamco.project.repository.InMemoryDesireRepositoryImpl;
+import dreamco.project.repository.mock.InMemoryDesireRepositoryImpl;
 import dreamco.project.util.DesireUtil;
 import org.slf4j.Logger;
 
@@ -42,7 +43,8 @@ public class UserServlet extends HttpServlet {
                 request.getParameter("barter"));
 
         LOG.info(desire.isNew() ? "Create {}" : "Update {}", desire);
-        repository.save(desire);
+        //repository.save(desire);
+        repository.save(desire, AuthorizedUser.id());
         response.sendRedirect("desires");
     }
 
@@ -51,17 +53,18 @@ public class UserServlet extends HttpServlet {
 
         if(action == null){
             LOG.info("getAll");
-            request.setAttribute("desireList", DesireUtil.getBARTERwithCollections(repository.getAll()));
+            request.setAttribute("desireList",
+                    DesireUtil.getBARTERwithCollections(repository.getAll(AuthorizedUser.id()), DesireUtil.DEFAULT_BARTER));
             request.getRequestDispatcher("/desireList.jsp").forward(request, response);
         } else if("delete".equals(action)){
             int id = getId(request);
             LOG.info("Delete {}", id);
-            repository.delete(id);
+            repository.delete(id, AuthorizedUser.id());
             response.sendRedirect("desires");
         } else if("create".equals(action) || "update".equals(action)){
             final Desire desire = action.equals("create") ?
                     new Desire(LocalDateTime.now().withNano(0).withSecond(0), "", "") :
-                    repository.get(getId(request));
+                    repository.get(getId(request), AuthorizedUser.id());
             request.setAttribute("desire", desire);
             request.getRequestDispatcher("/desireEdit.jsp").forward(request, response);
         }

@@ -25,7 +25,7 @@ public class DesireUtil {
         return BARTER;
     }
 
-    public static List<Desire> getBARTERwithCollections(Collection<Desire> desires) {
+    public static List<Desire> getBARTERwithCollections(Collection<Desire> desires, int DEFAULT_BARTER) {
 
         return desires.stream().collect(Collectors.toList());
     }
