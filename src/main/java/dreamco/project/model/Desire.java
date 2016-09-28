@@ -7,7 +7,7 @@ import java.time.LocalTime;
 /**
  * Created by Artyom on 19.09.2016.
  */
-public class Desire { // Описание параметров бартера
+public class Desire extends BaseEntity{ // Описание параметров бартера
     private Integer id;
 
     private final LocalDateTime dateTime;
@@ -28,13 +28,6 @@ public class Desire { // Описание параметров бартера
         this.barterPropose = barterPropose;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public LocalDateTime getDateTime() {
         return dateTime;
@@ -57,7 +50,13 @@ public class Desire { // Описание параметров бартера
         return barterPropose;
     }
 
-    public boolean isNew(){
-        return id == null;
+    @Override
+    public String toString() {
+        return "Desire{" +
+                "id=" + id +
+                ", dateTime=" + dateTime +
+                ", desireDescription='" + desireDescription + '\'' +
+                ", barterPropose='" + barterPropose + '\'' +
+                '}';
     }
 }

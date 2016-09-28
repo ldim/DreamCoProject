@@ -5,7 +5,10 @@ import dreamco.project.model.Desire;
 import dreamco.project.repository.DesireRepository;
 import dreamco.project.repository.mock.InMemoryDesireRepositoryImpl;
 import dreamco.project.util.DesireUtil;
+import dreamco.project.web.desire.DesireRestController;
 import org.slf4j.Logger;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -24,12 +27,20 @@ import static org.slf4j.LoggerFactory.getLogger;
 public class UserServlet extends HttpServlet {
     private static final Logger LOG = getLogger(UserServlet.class);
 
-    private DesireRepository repository;
+    private ConfigurableApplicationContext springContext;
+    private DesireRestController desireController;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        repository = new InMemoryDesireRepositoryImpl();
+        springContext = new ClassPathXmlApplicationContext("spring/spring-app.xml");
+        desireController = springContext.getBean(DesireRestController.class);
+    }
+
+    @Override
+    public void destroy() {
+        springContext.close();
+        super.destroy();
     }
 
     @Override
@@ -42,9 +53,13 @@ public class UserServlet extends HttpServlet {
                 request.getParameter("description"),
                 request.getParameter("barter"));
 
-        LOG.info(desire.isNew() ? "Create {}" : "Update {}", desire);
-        //repository.save(desire);
-        repository.save(desire, AuthorizedUser.id());
+        if (request.getParameter("id").isEmpty()) {
+            LOG.info("Create {}", desire);
+            desireController.create(desire);
+        } else {
+            LOG.info("Update {}", desire);
+            desireController.update(desire, getId(request));
+        }
         response.sendRedirect("desires");
     }
 
@@ -53,18 +68,19 @@ public class UserServlet extends HttpServlet {
 
         if(action == null){
             LOG.info("getAll");
-            request.setAttribute("desireList",
-                    DesireUtil.getBARTERwithCollections(repository.getAll(AuthorizedUser.id()), DesireUtil.DEFAULT_BARTER));
+            request.setAttribute("desireList", desireController.getAll());
             request.getRequestDispatcher("/desireList.jsp").forward(request, response);
+
         } else if("delete".equals(action)){
             int id = getId(request);
             LOG.info("Delete {}", id);
-            repository.delete(id, AuthorizedUser.id());
+            desireController.delete(id);
             response.sendRedirect("desires");
+
         } else if("create".equals(action) || "update".equals(action)){
             final Desire desire = action.equals("create") ?
                     new Desire(LocalDateTime.now().withNano(0).withSecond(0), "", "") :
-                    repository.get(getId(request), AuthorizedUser.id());
+                    desireController.get(getId(request));
             request.setAttribute("desire", desire);
             request.getRequestDispatcher("/desireEdit.jsp").forward(request, response);
         }

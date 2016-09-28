@@ -13,7 +13,7 @@ public class AuthorizedUser {
         return 1;
     }
 
-    public static int getCaloriesPerDay() {
+    public static int getBarterPerReg() {
         return DesireUtil.DEFAULT_BARTER;
     }
 }

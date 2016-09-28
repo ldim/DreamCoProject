@@ -1,9 +1,13 @@
 package dreamco.project.service;
 
 
+import dreamco.project.model.Desire;
 import dreamco.project.repository.DesireRepository;
+import dreamco.project.util.exception.ExceptionUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Collection;
 
 /**
  * User: Artyom
@@ -14,4 +18,29 @@ public class DesireServiceImpl implements DesireService {
     @Autowired
     private DesireRepository repository;
 
+    @Override
+    public Desire get(int id, int userId) {
+        return ExceptionUtil.checkNotFoundWithId(repository.get(id, userId), id);
+    }
+
+    @Override
+    public void delete(int id, int userId) {
+        ExceptionUtil.checkNotFoundWithId(repository.delete(id, userId), id);
+    }
+
+
+    @Override
+    public Collection<Desire> getAll(int userId) {
+        return repository.getAll(userId);
+    }
+
+    @Override
+    public Desire update(Desire desire, int userId) {
+        return ExceptionUtil.checkNotFoundWithId(repository.save(desire, userId), desire.getId());
+    }
+
+    @Override
+    public Desire save(Desire desire, int userId) {
+        return repository.save(desire, userId);
+    }
 }
