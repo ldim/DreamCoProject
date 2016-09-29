@@ -19,4 +19,10 @@ public interface DesireService {
     Desire update(Desire desire, int userId) throws NotFoundException;
 
     Desire save(Desire desire, int userId);
+
+    default Collection<Desire> getBetweenDates(String category, int userId) {
+        return getBetweenDateTimes(category, userId);
+    }
+
+    Collection<Desire> getBetweenDateTimes(String category, int userId);
 }

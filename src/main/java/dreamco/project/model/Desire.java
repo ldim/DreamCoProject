@@ -16,16 +16,23 @@ public class Desire extends BaseEntity{ // Описание параметров
 
     private final String barterPropose;
 
-    public Desire(LocalDateTime dateTime, String description, String barterPropose) {
-        this(null, dateTime, description, barterPropose);
+    private final String categories;
+
+    public String getCategories() {
+        return categories;
+    }
+
+    public Desire(LocalDateTime dateTime, String description, String barterPropose, String categories) {
+        this(null, dateTime, description, barterPropose, categories);
     }
 
 
-    public Desire(Integer id, LocalDateTime dateTime, String desireDescription, String barterPropose) {
+    public Desire(Integer id, LocalDateTime dateTime, String desireDescription, String barterPropose, String categories) {
         this.id = id;
         this.dateTime = dateTime;
         this.desireDescription = desireDescription;
         this.barterPropose = barterPropose;
+        this.categories = categories;
     }
 
 
@@ -50,6 +57,7 @@ public class Desire extends BaseEntity{ // Описание параметров
         return barterPropose;
     }
 
+
     @Override
     public String toString() {
         return "Desire{" +
@@ -57,6 +65,7 @@ public class Desire extends BaseEntity{ // Описание параметров
                 ", dateTime=" + dateTime +
                 ", desireDescription='" + desireDescription + '\'' +
                 ", barterPropose='" + barterPropose + '\'' +
+                ", categories='" + categories + '\'' +
                 '}';
     }
 }

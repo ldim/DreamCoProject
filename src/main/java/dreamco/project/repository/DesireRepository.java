@@ -19,4 +19,6 @@ public interface DesireRepository {
 
     // ORDERED dateTime
     Collection<Desire> getAll(int userId);
+
+    Collection<Desire> getBetween(String category, int userId);
 }

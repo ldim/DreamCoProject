@@ -54,4 +54,11 @@ public class DesireRestController {
         return service.save(desire, userId);
     }
 
+    public List<Desire> getCategory(String category) {
+        int userId = AuthorizedUser.id();
+        LOG.info("getBetween {} for User {}", category, userId);
+
+        return DesireUtil.getFilteredWithCategory(
+                service.getBetweenDates(category, userId), category);
+    }
 }

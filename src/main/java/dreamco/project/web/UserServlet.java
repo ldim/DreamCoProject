@@ -1,10 +1,7 @@
 package dreamco.project.web;
 
-import dreamco.project.AuthorizedUser;
+import dreamco.project.model.Categories;
 import dreamco.project.model.Desire;
-import dreamco.project.repository.DesireRepository;
-import dreamco.project.repository.mock.InMemoryDesireRepositoryImpl;
-import dreamco.project.util.DesireUtil;
 import dreamco.project.web.desire.DesireRestController;
 import org.slf4j.Logger;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -46,21 +43,32 @@ public class UserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("UTF-8");
-        String id = request.getParameter("id");
+        String action = request.getParameter("action");
+        if (action == null) {
+           final Desire desire = new Desire(LocalDateTime.parse(request.getParameter("dateTime")),
+                    request.getParameter("description"),
+                    request.getParameter("barter"),
+                    request.getParameter("category"));
 
-        Desire desire = new Desire(id.isEmpty() ? null : Integer.valueOf(id),
-                LocalDateTime.parse(request.getParameter("dateTime")),
-                request.getParameter("description"),
-                request.getParameter("barter"));
-
-        if (request.getParameter("id").isEmpty()) {
-            LOG.info("Create {}", desire);
-            desireController.create(desire);
-        } else {
-            LOG.info("Update {}", desire);
-            desireController.update(desire, getId(request));
+            if (request.getParameter("id").isEmpty()) {
+                LOG.info("Create {}", desire);
+                desireController.create(desire);
+            } else {
+                LOG.info("Update {}", desire);
+                desireController.update(desire, getId(request));
+            }
+            response.sendRedirect("desires");
+        } else if ("filter".equals(action)) {
+            String desireCategory = resetParam("category", request);
+            request.setAttribute("desireList", desireController.getCategory(desireCategory));
+            request.getRequestDispatcher("/desireList.jsp").forward(request, response);
         }
-        response.sendRedirect("desires");
+    }
+
+    private String resetParam(String param, HttpServletRequest request) {
+        String value = request.getParameter(param);
+        request.setAttribute(param, value);
+        return value;
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -79,7 +87,7 @@ public class UserServlet extends HttpServlet {
 
         } else if("create".equals(action) || "update".equals(action)){
             final Desire desire = action.equals("create") ?
-                    new Desire(LocalDateTime.now().withNano(0).withSecond(0), "", "") :
+                    new Desire(LocalDateTime.now().withNano(0).withSecond(0), "", "", "") :
                     desireController.get(getId(request));
             request.setAttribute("desire", desire);
             request.getRequestDispatcher("/desireEdit.jsp").forward(request, response);

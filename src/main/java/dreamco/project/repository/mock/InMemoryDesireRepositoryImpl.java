@@ -1,7 +1,9 @@
 package dreamco.project.repository.mock;
 
+import dreamco.project.model.Categories;
 import dreamco.project.model.Desire;
 import dreamco.project.repository.DesireRepository;
+import dreamco.project.util.CategoriesUtil;
 import dreamco.project.util.DesireUtil;
 import org.springframework.stereotype.Repository;
 
@@ -30,8 +32,8 @@ public class InMemoryDesireRepositoryImpl implements DesireRepository {
     {
         DesireUtil.BARTER.forEach(um -> save(um, USER_ID));
 
-        save(new Desire(LocalDateTime.of(2015, Month.JUNE, 1, 14, 0), "Админ ланч", "Barter"), ADMIN_ID);
-        save(new Desire(LocalDateTime.of(2015, Month.JUNE, 1, 21, 0), "Админ ужин", "Barter"), ADMIN_ID);
+        save(new Desire(LocalDateTime.of(2016, Month.JUNE, 1, 14, 0), "Админ desire", "Barter", Categories.DESIRE), ADMIN_ID);
+        save(new Desire(LocalDateTime.of(2016, Month.JUNE, 1, 21, 0), "Админ desire", "Barter", Categories.JOB), ADMIN_ID);
     }
 
 
@@ -69,5 +71,12 @@ public class InMemoryDesireRepositoryImpl implements DesireRepository {
         return desires == null ?
                 Collections.emptyList() :
                 desires.values().stream().sorted(DESIRE_COMPARATOR).collect(Collectors.toList());
+    }
+
+    @Override
+    public Collection<Desire> getBetween(String category, int userId) {
+        Objects.requireNonNull(category);
+        CategoriesUtil.categoryInitialize(getAll(userId));
+        return CategoriesUtil.getCategory(category);
     }
 }

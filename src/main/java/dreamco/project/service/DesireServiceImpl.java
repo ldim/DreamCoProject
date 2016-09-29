@@ -35,6 +35,11 @@ public class DesireServiceImpl implements DesireService {
     }
 
     @Override
+    public Collection<Desire> getBetweenDateTimes(String category, int userId) {
+        return repository.getBetween(category, userId);
+    }
+
+    @Override
     public Desire update(Desire desire, int userId) {
         return ExceptionUtil.checkNotFoundWithId(repository.save(desire, userId), desire.getId());
     }
