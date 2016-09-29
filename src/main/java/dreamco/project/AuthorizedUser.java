@@ -9,8 +9,14 @@ import dreamco.project.util.DesireUtil;
  */
 public class AuthorizedUser {
 
+    public static int id = 1;
+
     public static int id() {
-        return 1;
+        return id;
+    }
+
+    public static void setId(int id) {
+        AuthorizedUser.id = id;
     }
 
     public static int getBarterPerReg() {

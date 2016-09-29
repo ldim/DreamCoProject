@@ -6,12 +6,22 @@
     <display-name>DreamCo</display-name>
 
     <servlet>
-        <servlet-name>userServlet</servlet-name>
+        <servlet-name>usersServlet</servlet-name>
         <servlet-class>dreamco.project.web.UserServlet</servlet-class>
         <load-on-startup>0</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>userServlet</servlet-name>
+        <servlet-name>usersServlet</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>desireServlet</servlet-name>
+        <servlet-class>dreamco.project.web.DesireServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>desireServlet</servlet-name>
         <url-pattern>/desires</url-pattern>
     </servlet-mapping>
 

@@ -52,6 +52,10 @@ public class CategoriesUtil {
         if(categories.equals("Rest")){
             return  restCategory;
         }
+        categoriesList.addAll(desireCategory);
+        categoriesList.addAll(jobCategory);
+        categoriesList.addAll(hobbieCategory);
+        categoriesList.addAll(restCategory);
         return categoriesList;
     }
 

@@ -7,8 +7,13 @@
 <body>
 <h2>Проект "<a href="https://github.com/ArtemVorov/DreamCoProject" target="_blank">Barter Club"</a></h2>
 <hr>
-<ul>
-    <li><a href="desires">User barter list</a></li>
-</ul>
+<form method="post" action="users">
+    <b>Desire list of&nbsp;</b>
+    <select name="userId">
+        <option value="1">User</option>
+        <option value="2">Admin</option>
+    </select>
+    <button type="submit">Select</button>
+</form>
 </body>
 </html>

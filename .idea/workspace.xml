@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2ba226d-0bd2-4022-af14-ae94ac5740c3" name="Default" comment="Add filter">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/model/Categories.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/util/CategoriesUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" />
+    <list default="true" id="b2ba226d-0bd2-4022-af14-ae94ac5740c3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/web/DesireServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/userList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/model/Desire.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/model/Desire.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/repository/DesireRepository.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/repository/DesireRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/repository/mock/InMemoryDesireRepositoryImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/repository/mock/InMemoryDesireRepositoryImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/service/DesireService.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/service/DesireService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/service/DesireServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/service/DesireServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/util/DesireUtil.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/util/DesireUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/AuthorizedUser.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/AuthorizedUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/util/CategoriesUtil.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/util/CategoriesUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/web/UserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/web/UserServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dreamco/project/web/desire/DesireRestController.java" afterPath="$PROJECT_DIR$/src/main/java/dreamco/project/web/desire/DesireRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/desireEdit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/desireEdit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/desireList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/desireList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
     </list>
     <ignored path="DreamCoProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,54 +33,32 @@
     <favorites_list name="DreamCoProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
+      <file leaf-file-name="desireList.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/desireList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CategoriesUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/util/CategoriesUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="370">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DesireRestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/web/desire/DesireRestController.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DesireServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/service/DesireServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InMemoryDesireRepositoryImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/repository/mock/InMemoryDesireRepositoryImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DesireUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/util/DesireUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -124,8 +96,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/model/UserDesire.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/userList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/util/UserDesireUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/util/exception/NotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/util/exception/ExceptionUtil.java" />
@@ -148,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/repository/InMemoryDesireRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/repository/mock/InMemoryUserRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dreamco/project/AuthorizedUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/model/Categories.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/service/DesireService.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/web/desire/DesireRestController.java" />
@@ -156,10 +125,13 @@
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/service/DesireServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/repository/mock/InMemoryDesireRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/desireEdit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/desireList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/dreamco/project/web/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/model/Desire.java" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/util/DesireUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/dreamco/project/AuthorizedUser.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dreamco/project/web/UserServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/desireList.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/dreamco/project/util/CategoriesUtil.java" />
       </list>
     </option>
@@ -236,7 +208,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -631,7 +603,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -644,19 +616,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DEVELOP\Project\DreamCoProject\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dreamco.project" />
+      <recent name="dreamco.project.repository" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\DEVELOP\Project\DreamCoProject\src\main\webapp" />
       <recent name="E:\DEVELOP\Project\DreamCoProject\src\main\java\dreamco\project\repository" />
       <recent name="E:\DEVELOP\Project\DreamCoProject\src\main\resources" />
       <recent name="E:\DEVELOP\Project\DreamCoProject\src\main\java\dreamco\project\web" />
       <recent name="E:\DEVELOP\Project\DreamCoProject\src\main\java\dreamco\project" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="dreamco.project" />
-      <recent name="dreamco.project.repository" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\DEVELOP\Project\DreamCoProject\src\main" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -1290,7 +1262,9 @@
       <workItem from="1474962350638" duration="2836000" />
       <workItem from="1474991310626" duration="486000" />
       <workItem from="1475067367617" duration="2681000" />
-      <workItem from="1475153191776" duration="19250000" />
+      <workItem from="1475153191776" duration="19698000" />
+      <workItem from="1475180642867" duration="581000" />
+      <workItem from="1475181265289" duration="1003000" />
     </task>
     <task id="LOCAL-00002" summary="WEB add 01">
       <created>1474642425357</created>
@@ -1348,11 +1322,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475094877962</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add filter">
+      <created>1475177410805</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1475177410805</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69756000" />
+    <option name="totallyTimeSpent" value="71788000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1451,7 +1432,8 @@
     <MESSAGE value="Add controller" />
     <MESSAGE value="Add spring" />
     <MESSAGE value="Service and controller impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Service and controller impl" />
+    <MESSAGE value="Add filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1462,20 +1444,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1544,13 +1512,6 @@
         <state relative-caret-position="102">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1634,17 +1595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/AuthorizedUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="e#237#238#0" expanded="false" />
-            <element signature="e#285#286#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1656,14 +1606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1679,7 +1621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1687,7 +1628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="215" column="18" selection-start-line="215" selection-start-column="18" selection-end-line="215" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1711,7 +1651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1719,7 +1658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1727,14 +1665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/desireList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1751,7 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1759,7 +1688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1774,7 +1702,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/web/UserServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/web/DesireServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="61" column="54" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="67" />
@@ -1782,19 +1710,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/repository/mock/InMemoryDesireRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/web/desire/DesireRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/util/DesireUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1806,20 +1728,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/web/desire/DesireRestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/repository/mock/InMemoryDesireRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state relative-caret-position="388">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/util/DesireUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/AuthorizedUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/userList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/web/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/desireList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dreamco/project/util/CategoriesUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="370">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
           <folding />
         </state>
       </provider>
