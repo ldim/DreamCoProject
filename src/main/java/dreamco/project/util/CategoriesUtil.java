@@ -40,16 +40,16 @@ public class CategoriesUtil {
     public static List<Desire> getCategory(String categories){
         List<Desire> categoriesList = new ArrayList<>();
 
-        if(categories.equals("Desire")){
+        if(categories.toLowerCase().equals("desire")){
             return desireCategory;
         }
-        if(categories.equals("Job")){
+        if(categories.toLowerCase().equals("job")){
             return jobCategory;
         }
-        if(categories.equals("Hobbie")){
+        if(categories.toLowerCase().equals("hobbie")){
             return hobbieCategory;
         }
-        if(categories.equals("Rest")){
+        if(categories.toLowerCase().equals("rest")){
             return  restCategory;
         }
         categoriesList.addAll(desireCategory);
