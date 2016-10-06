@@ -16,8 +16,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 /**
- * GKislin
- * 15.06.2015.
+ * temaprof
+ * 24.09.2016.
  */
 @Repository
 public class InMemoryUserRepositoryImpl implements UserRepository {

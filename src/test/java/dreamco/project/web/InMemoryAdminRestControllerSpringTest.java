@@ -21,8 +21,8 @@ import static dreamco.project.UserTestData.USER;
 
 
 /**
- * GKislin
- * 13.03.2015.
+ * temaprof
+ * 28.09.2016.
  */
 @ContextConfiguration("classpath:spring/spring-app.xml")
 @RunWith(SpringJUnit4ClassRunner.class)

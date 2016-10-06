@@ -8,7 +8,7 @@ import java.util.EnumSet;
 import java.util.Set;
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 19.09.2016
  */
 public class User extends NamedEntity {
@@ -26,6 +26,10 @@ public class User extends NamedEntity {
     protected int countBarter = DesireUtil.DEFAULT_BARTER;
 
     public User() {
+    }
+
+    public User(User u) {
+        this(u.getId(), u.getName(), u.getEmail(), u.getPassword(), u.getCountBarter(), u.isEnabled(), u.getRoles());
     }
 
     public User(Integer id, String name, String email, String password, Role role, Role... roles) {

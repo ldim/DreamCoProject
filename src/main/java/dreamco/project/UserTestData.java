@@ -5,8 +5,8 @@ import dreamco.project.model.Role;
 import dreamco.project.model.User;
 
 /**
- * GKislin
- * 24.09.2015.
+ * temaprof
+ * 24.09.2016.
  */
 public class UserTestData {
     public static final int USER_ID = 1;

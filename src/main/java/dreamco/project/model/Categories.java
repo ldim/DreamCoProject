@@ -1,7 +1,7 @@
 package dreamco.project.model;
 
 /**
- * Created by Artyom on 29.09.2016.
+ * Created by temaprof on 29.09.2016.
  */
 public interface Categories {
     public static final String DESIRE = "Desire";

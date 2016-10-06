@@ -18,7 +18,7 @@ import java.util.Objects;
 import static org.slf4j.LoggerFactory.getLogger;
 
 /**
- * Created by Artyom on 23.09.2016.
+ * Created by temaprof on 23.09.2016.
  */
 public class DesireServlet extends HttpServlet {
     private static final Logger LOG = getLogger(DesireServlet.class);
@@ -29,7 +29,7 @@ public class DesireServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
         super.init(config);
-        springContext = new ClassPathXmlApplicationContext("spring/spring-app.xml");
+        springContext = new ClassPathXmlApplicationContext("spring/spring-app.xml", "spring/spring-db.xml");
         desireController = springContext.getBean(DesireRestController.class);
     }
 

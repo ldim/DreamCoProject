@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * Created by Artyom on 24.09.2016.
+ * Created by temaprof on 24.09.2016.
  */
 public class DesireUtil {
     public static final List<Desire> BARTER = Arrays.asList(

@@ -9,6 +9,9 @@ import org.junit.*;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * Created by temaprof on 29.09.2016.
+ */
 
 import java.util.Arrays;
 import java.util.Collection;

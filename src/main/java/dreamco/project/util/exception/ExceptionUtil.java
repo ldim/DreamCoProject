@@ -2,7 +2,7 @@ package dreamco.project.util.exception;
 
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 19.09.2016
  */
 public class ExceptionUtil {

@@ -1,15 +1,16 @@
 package dreamco.project;
 
 
+import dreamco.project.model.BaseEntity;
 import dreamco.project.util.DesireUtil;
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 19.09.2016
  */
 public class AuthorizedUser {
 
-    public static int id = 1;
+    public static int id = BaseEntity.START_SEQ;
 
     public static int id() {
         return id;

@@ -5,10 +5,9 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 /**
- * Created by Artyom on 19.09.2016.
+ * Created by temaprof on 19.09.2016.
  */
 public class Desire extends BaseEntity{ // Описание параметров бартера
-    private Integer id;
 
     private final LocalDateTime dateTime;
 
@@ -26,9 +25,8 @@ public class Desire extends BaseEntity{ // Описание параметров
         this(null, dateTime, description, barterPropose, categories);
     }
 
-
     public Desire(Integer id, LocalDateTime dateTime, String desireDescription, String barterPropose, String categories) {
-        this.id = id;
+        super(id);
         this.dateTime = dateTime;
         this.desireDescription = desireDescription;
         this.barterPropose = barterPropose;

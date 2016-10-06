@@ -7,7 +7,7 @@ import java.util.*;
 
 
 /**
- * Created by Artyom on 29.09.2016.
+ * Created by temaprof on 29.09.2016.
  */
 public class CategoriesUtil {
   public static List<Desire> jobCategory = Collections.synchronizedList(new Vector<Desire>());

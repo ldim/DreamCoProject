@@ -6,7 +6,7 @@ import dreamco.project.util.exception.NotFoundException;
 import java.util.Collection;
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 19.09.2016
  */
 public interface DesireService {

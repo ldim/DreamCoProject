@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 import java.util.List;
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 26.09.2016
  */
 

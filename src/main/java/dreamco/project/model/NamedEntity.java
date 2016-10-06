@@ -1,7 +1,7 @@
 package dreamco.project.model;
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 19.09.2016
  */
 public class NamedEntity extends BaseEntity { // Именованная сущность

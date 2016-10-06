@@ -19,7 +19,7 @@ import static dreamco.project.repository.mock.InMemoryUserRepositoryImpl.ADMIN_I
 import static dreamco.project.repository.mock.InMemoryUserRepositoryImpl.USER_ID;
 
 /**
- * Created by Artyom on 25.09.2016.
+ * Created by temaprof on 25.09.2016.
  */
 @Repository
 public class InMemoryDesireRepositoryImpl implements DesireRepository {

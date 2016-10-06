@@ -12,7 +12,7 @@ import org.springframework.stereotype.Controller;
 import java.util.List;
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 19.09.2016
  */
 @Controller

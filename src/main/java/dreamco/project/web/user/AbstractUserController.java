@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 /**
- * User: Artyom
+ * User: temaprof
  * Date: 19.09.2016
  */
 public abstract class AbstractUserController {
