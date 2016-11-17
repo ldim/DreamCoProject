@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dreams</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dreams.css">
+</head>
+<body>
+<div id="basicModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Registration</h3>
+    </div>
+    <div class="modal-body">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" class="form-control" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" class="form-control" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" class="form-control" placeholder="Enter your password"></td>
+            </tr>
+            <tr>
+                <td>Confirm password</td>
+                <td><input type="password" class="form-control"  placeholder="Confirm password"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-footer">
+        <!--
+                <a href="#" class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</a>
+        -->
+        <a href="profile.html" class="btn btn-primary">Sign in</a>
+    </div>
+</div>
+<div id="logInModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Log in</h3>
+    </div>
+    <div class="modal-body">
+        <table>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" class="form-control" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" class="form-control" placeholder="Enter your password"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="modal-footer">
+        <!--
+                <a href="#" class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</a>
+        -->
+        <a href="profile.html" class="btn btn-primary">Sign in</a>
+    </div>
+</div>
+<header>
+    <div class="menu">
+        <div class="container menu-container">
+            <div class="menu-logo">
+                <div class="menu-logo-icon">D</div>
+                <div class="menu-logo-text-container">
+                    <a href="index.html" class="menu-logo-text menu-logo-text-up">Dream.Co</a><br>
+                    <a href="index.html" class="menu-logo-text menu-logo-text-down">make it happen</a>
+                </div>
+            </div>
+            <a href="index.html" class="menu-item menu-item-1">Home</a>
+            <a href="dreams.html" class="menu-item menu-item-1">Dreams</a>
+            <a href="profile.html" class="menu-item menu-item-1">Profile</a>
+            <button class="menu-item menu-item-logIn btn" type="button" data-toggle="modal" data-target="#basicModal">Sign in</button>
+            <button class="menu-item menu-item-signIn" type="button" data-toggle="modal" data-target="#logInModal">Log in</button>
+        </div>
+    </div>
+</header>
+
+<div class="middle container">
+    <div class="listOfDreams">
+        <span>List of Dreams</span>
+    </div>
+    <div class="dreams">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Name of dream</th>
+                    <th>User</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tr>
+                <td>12.02.16</td>
+                <td>Motocycles</td>
+                <td><a href="">Ivan Petryak</a></td>
+                <td><span class="fa fa-check"></span></td>
+            </tr>
+            <tr>
+                <td>12.02.16</td>
+                <td>Jumping</td>
+                <td><a href="">Ivan Petryak</a></td>
+                <td><span class="fa fa-check"></span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content container">
+        <div class="projected">
+            <table>
+                <tr>
+                    <td>Projected by:</td>
+                    <td><span class="fa fa-user-circle-o"></span>Darya Makarova</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="fa fa-user-circle-o"></span>Artem Vorov</td>
+                </tr>
+            </table>
+        </div>
+        <div class="aboutUs">
+            <a href="">About Us:</a>
+        </div>
+        <div class="help">
+            <span href="">Help:</span>
+            <table>
+                <tr>
+                    <td><span class="fa fa-envelope"></span></td>
+                    <td><a href="darya.aleks.mak@gmail.com">darya.aleks.mak@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td> <span class="fa fa-phone"></span></td>
+                    <td><a href="">09670445991</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="contact">
+            <a href="">Contact:</a>
+            <div class="contact-icons">
+                <a href="#" class="fa fa-vk"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-skype"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!------------------------JS----------------------------->
+<script src="jquery/jquery-3.1.0.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
