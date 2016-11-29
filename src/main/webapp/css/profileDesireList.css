@@ -24,6 +24,7 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     border-bottom: 2px solid white;
+    
 }
 .menu-item {
     margin: 10px 0 10px 20px;

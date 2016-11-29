@@ -48,10 +48,13 @@ body {
 #basicModal,
 #logInModal {
     background-color: rgba(245, 245, 245, 0.7);
-    width: 400px;
-    height: 370px;
-    margin-left: calc(50% - 200px);
-    margin-top: 100px;
+    width: 1172px;
+    height: 644px;
+    margin-left: calc(20% - 200px);
+    margin-top: 0px;
+    padding-right: 0;
+    
+    padding-right: 0 !important;
 
 }
 
@@ -68,7 +71,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
+    width: 100%;
 }
 .menu-item {
     margin: 10px 0 10px 20px;
@@ -309,21 +313,57 @@ span {
 }
 
 input{
-    height: 80px ;
-    width: 300px;
+    height: 20px;
+    width: 150px;
     font-size: 18px;
     margin-bottom: 10px;
     padding-left: 30px;
     font-size: 18px;
     font-family: "FontAwesome";
-
-
-
 }
 .signin{
     margin-left: 20%;
 }
 
+.file-upload {
+     position: relative; /* Ãâ€ÃÂ°ÃÂµÃÂ¼ ÃÂ²ÃÂ¾ÃÂ·ÃÂ¼ÃÂ¾ÃÂ¶ÃÂ½ÃÂ¾Ã‘ÂÃ‘â€šÃ‘Å’ ÃÂ´ÃÂµÃÂ»ÃÂ°Ã‘â€šÃ‘Å’ ÃÂ¿ÃÂ¾ÃÂ·ÃÂ¸Ã‘â€ ÃÂ¸ÃÂ¾ÃÂ½ÃÂ¸Ã‘â‚¬ÃÂ¾ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂµ, ÃÂ²ÃÂ½Ã‘Æ’Ã‘â€šÃ‘â‚¬ÃÂ¸ ÃÂ´ÃÂ°ÃÂ½ÃÂ½ÃÂ¾ÃÂ³ÃÂ¾ Ã‘ÂÃÂ»ÃÂµÃÂ¼ÃÂµÃÂ½Ã‘â€šÃÂ° */
+     overflow: hidden; /* Ãâ€™Ã‘ÂÃÂµ Ã‘â€¡Ã‘â€šÃÂ¾ ÃÂ²Ã‘â€¹Ã‘â€¦ÃÂ¾ÃÂ´ÃÂ¸Ã‘â€š ÃÂ·ÃÂ° ÃÂ¿Ã‘â‚¬ÃÂµÃÂ´ÃÂµÃÂ»Ã‘â€¹ - Ã‘ÂÃÂºÃ‘â‚¬Ã‘â€¹ÃÂ²ÃÂ°ÃÂµÃÂ¼ */
+     width: 200px; /* Ãâ€”ÃÂ°ÃÂ´ÃÂ°ÃÂµÃÂ¼ Ã‘Ë†ÃÂ¸Ã‘â‚¬ÃÂ¸ÃÂ½Ã‘Æ’ ÃÂºÃÂ½ÃÂ¾ÃÂ¿ÃÂºÃÂ¸ ÃÂ²Ã‘â€¹ÃÂ±ÃÂ¾Ã‘â‚¬ÃÂ° Ã‘â€žÃÂ°ÃÂ¹ÃÂ»ÃÂ° */
+     height: 35px; /* Ãâ€”ÃÂ°ÃÂ´ÃÂ°ÃÂµÃÂ¼ ÃÂ²Ã‘â€¹Ã‘ÂÃÂ¾Ã‘â€šÃ‘Æ’ ÃÂºÃÂ½ÃÂ¾ÃÂ¿ÃÂºÃÂ¸ ÃÂ²Ã‘â€¹ÃÂ±ÃÂ¾Ã‘â‚¬ÃÂ° Ã‘â€žÃÂ°ÃÂ¹ÃÂ»ÃÂ° */
+     background: #555555;
+     border-radius: 3px;
+     padding: 8px 4px;
+     color: #fff;
+     text-align: center;
+     margin-left: 36%;
+     margin-bottom: 36px;
+}
+.file-upload:hover {
+     background: #7aad55;
+}
+.file-upload input[type="file"]{
+    display: none; /* ÃÅ¾ÃÂ±Ã‘ÂÃÂ·ÃÂ°Ã‘â€šÃÂµÃÂ»Ã‘Å’ÃÂ½ÃÂ¾ Ã‘ÂÃÂºÃ‘â‚¬Ã‘â€¹ÃÂ²ÃÂ°ÃÂµÃÂ¼ ÃÂ½ÃÂ°Ã‘ÂÃ‘â€šÃÂ¾Ã‘ÂÃ‘â€°ÃÂ¸ÃÂ¹ Input File */
+}
+.file-upload label {
+     /* ÃÂ ÃÂ°Ã‘ÂÃ‘â€šÃ‘ÂÃÂ³ÃÂ¸ÃÂ²ÃÂ°ÃÂµÃÂ¼ label ÃÂ½ÃÂ° ÃÂ²Ã‘ÂÃ‘Å½ ÃÂ²ÃÂ¾ÃÂ·ÃÂ¼ÃÂ¾ÃÂ¶ÃÂ½Ã‘Æ’Ã‘Å½ ÃÂ¿ÃÂ»ÃÂ¾Ã‘â€°ÃÂ°ÃÂ´Ã‘Å’ ÃÂ±ÃÂ»ÃÂ¾ÃÂºÃÂ° .file-upload */
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+}
+.file-upload span {
+     line-height: 36px; /* Ãâ€ÃÂµÃÂ»ÃÂ°ÃÂµÃÂ¼ ÃÂ²ÃÂµÃ‘â‚¬Ã‘â€šÃÂ¸ÃÂºÃÂ°ÃÂ»Ã‘Å’ÃÂ½ÃÂ¾ÃÂµ ÃÂ²Ã‘â€¹Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ½ÃÂ¸ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂµ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ°, ÃÂºÃÂ¾Ã‘â€šÃÂ¾Ã‘â‚¬Ã‘â€¹ÃÂ¹ ÃÂ½ÃÂ°ÃÂ¿ÃÂ¸Ã‘ÂÃÂ°ÃÂ½ ÃÂ½ÃÂ° ÃÂºÃÂ½ÃÂ¾ÃÂ¿ÃÂºÃÂµ */
+}
+.avatar_upload{
+    width:200px;
+    height:200px;
+    position:relative;
+    margin-left:36%;
+    margin-bottom:40px;
+}
 /*
 input[type ="text"]{
     background: url("../images/usr.png") no-repeat 0% 50% white;
@@ -335,5 +375,4 @@ input[type ="password"]{
     background-size: 40px;
 
 }*/
-
 
