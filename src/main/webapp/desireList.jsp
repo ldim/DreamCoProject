@@ -46,11 +46,11 @@
 
 <div class="col-md-5 col-sm-5 col-xs-12">
 <h5>Jenifer Smith</h5>
-<p>Web Designer / Develpor </p>
+
 <ul>
-<li><span class="glyphicon glyphicon-briefcase"></span> 5 years</li>
+<!-- <li><span class="glyphicon glyphicon-briefcase"></span> 5 years</li> -->
 <li><span class="glyphicon glyphicon-map-marker"></span> U.S.A.</li>
-<li><span class="glyphicon glyphicon-home"></span> 555 street Address,toedo 43606 U.S.A.</li>
+<!-- <li><span class="glyphicon glyphicon-home"></span> 555 street Address,toedo 43606 U.S.A.</li> -->
 <li><span class="glyphicon glyphicon-phone"></span> <a href="#" title="call">(+021) 956 789123</a></li>
 <li><span class="glyphicon glyphicon-envelope"></span><a href="#" title="mail">jenifer123@gmail.com</a></li>
 
@@ -139,16 +139,8 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
         <td>: jenifer123@gmail.com</td> 
      </tr>
      <tr>    
-        <td>Mobile</td>
-        <td>: (+6283) 456 789</td>       
-     </tr>
-     <tr>    
         <td>Phone</td>
         <td>: (+021) 956 789123</td>       
-    </tr>
-    <tr>    
-        <td>Experience</td>
-        <td>: 5 years</td>       
     </tr>
     <tr>
         <td>Twiter</td>
@@ -247,92 +239,13 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 
 
-<div class="form-group col-md-12"> 
-  <label class="col-md-10 control-label">Industry</label>
-    <div class="col-md-12 selectContainer">
-    <div class="input-group">
-    <select name="state" class="form-control selectpicker" >
-      <option value=" " >Industry</option>
-      <option>Industry</option>
-      <option>Industry</option>
-      <option>Industry</option>
-    </select>
-  </div>
-</div>
-</div>
 
 
 <!-- Select Basic -->
-   
-<div class="form-group col-md-12"> 
-  <label class="col-md-10 control-label">Qualification</label>
-    <div class="col-md-12 selectContainer">
-    <div class="input-group">
-    <select name="state" class="form-control selectpicker" >
-           <option value=" " >your Qualification</option>
-      <option>M.A.</option>
-      <option>B.A.</option>
-      <option >B.Ed</option>
-    </select>
-  </div>
-</div>
-</div>
 
 
 
-<div class="form-group col-md-12"> 
-  <label class="col-md-10 control-label">Expertise areas</label>
-    <div class="col-md-12 selectContainer">
-    <div class="input-group">
-    <select name="state" class="form-control selectpicker" >
-      <option value=" " >Expertise areas</option>
-      <option>Expertise areas1</option>
-      <option>Expertise areas1</option>
-      <option>Expertise areas1</option>
-    </select>
-  </div>
-</div>
-</div>
 
-<div class="form-group col-md-12"> 
-  <label class="col-md-10 control-label">Experience</label>
-    <div class="col-md-12 selectContainer">
-    <div class="input-group">
-    <select name="state" class="form-control selectpicker" >
-      <option value=" " >your Experience</option>
-      <option>1 year</option>
-      <option>2 years</option>
-      <option >3 years</option>
-    </select>
-  </div>
-</div>
-</div>
-
-<div class="form-group col-md-12"> 
-  <label class="col-md-10 control-label">Salary expected</label>
-    <div class="col-md-12 selectContainer">
-    <div class="input-group">
-    <select name="state" class="form-control selectpicker" >
-      <option value=" " >your Salary expectation</option>
-      <option>50 thousand</option>
-      <option>30thousand</option>
-    </select>
-  </div>
-</div>
-</div>
-
-<div class="form-group col-md-12"> 
-  <label class="col-md-10 control-label">Preferred Location</label>
-    <div class="col-md-12 selectContainer">
-    <div class="input-group">
-    <select name="state" class="form-control selectpicker" >
-      <option value=" " >your Preferred Location</option>
-      <option>Chandigarh</option>
-      <option>Chandigarh</option>
-    </select>
-  </div>
-</div>
-</div>
 
 <!--<div class="form-group col-md-12">
   <label class="col-md-10 control-label">Project Description</label>
@@ -509,6 +422,10 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
                 <tr>
                     <td></td>
                     <td><span class="fa fa-user-circle-o"></span>Artem Vorov</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span class="fa fa-user-circle-o"></span>Dmitry Lopata</td>
                 </tr>
             </table>
         </div>
