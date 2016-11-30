@@ -76,13 +76,13 @@
                 <label for="firstname"><span class="req">* </span> First name: </label>
                     <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
                         <div id="errFirst"></div>
-            </div> 
+            </div>
 
              <div class="form-group">
                 <label for="lastname"><span class="req">* </span> Last name: </label>
                     <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
                         <div id="errLast"></div>
-            </div> 
+            </div>
 
             <div class="form-group">
                 <label for="email"><span class="req">* </span> Email Address: </label>
@@ -118,12 +118,13 @@
 
 
 	</div>
-</div>
 
+</div>
                         <ul class="list-inline pull-right">
                             <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
                         </ul>
                     </div>
+
                     <div class="tab-pane" role="tabpanel" id="step2">
                     	<div class="container">
 	<div class="row">
@@ -132,7 +133,7 @@
 <div class="form-group">
 <label for="birthDate">
 <span class="req">* </span>
-  Date of Birth: 
+  Date of Birth:
   </label>
 <!--<div class="col-sm-9">-->
 <input type="date" id="birthDate" class="form-control">
@@ -142,7 +143,7 @@
             <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
                     <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/>
             </div>
-            
+
 <div class="form-group">
 <label for="country">
   <span class="req">* </span>
@@ -161,6 +162,16 @@
                         </select>
                     </div>
                     
+                    <div class="form-group">
+                <label for="email"><span class="req">* </span> Email Address: </label>
+                    <input class="form-control" required="" type="text" name="email" id="email" onchange="email_validate(this.value);">
+                        <div class="status" id="status"></div>
+            </div>
+
+                <div class="form-group">
+                    <label for="info"><span class="req">* </span> Some information about you: </label>
+                    <textarea rows="4" cols="75" name="text" style="border: 1px solid  #ccc; border-radius: 3px"></textarea>
+                </div>
 
 
             <!--<div class="form-group">
@@ -213,6 +224,8 @@
 
 
                         <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
                             <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
                         </ul>
 
@@ -235,6 +248,10 @@
                             <li><button type="button" class="btn btn-default next-step">Skip</button></li>
                             <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
                         </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h3>Complete</h3>
+                        <p>You have successfully completed all steps.</p>
                     </div>
 
                     <div class="clearfix"></div>
@@ -423,7 +440,7 @@
 <script src="js/registration.js"></script>
 <script src="js/registration_step1.js"></script>
 <script src="js/profile.js"></script>
-<script src="js/avatar_upload.js"></script>
+<script src="js/wizard.js"></script>
 
 </body>
 </html>

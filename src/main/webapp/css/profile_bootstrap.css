@@ -84,8 +84,16 @@ select.selectpicker option { color:#000 !important;}
 select.selectpicker option:first-child { color:#99999c;}
 .input-group { width:100%;}
 .uplod-picture {width: 100%; background-color:#;color: #fff; padding:20px 10px;margin-bottom:10px;}
-.uplod-file {position: relative;overflow: hidden;color: #fff;background-color: rgb(99, 101, 102);border: 0px solid #a02e09;border-radius: 0px;
- transition:all ease 0.3s;margin: 5px;}
+.uplod-file {
+ position: relative;
+ overflow: hidden;
+ color: #fff;
+ background-color: rgb(99, 101, 102);
+ border: 0px solid #131212;
+ border-radius: 0px;
+ transition:all ease 0.3s;
+ margin: 5px;
+ }
 .uplod-file input[type=file] {position: absolute;top: 0;right: 0;min-width: 100%;min-height: 100%;font-size: 100px;text-align: right;
 filter: alpha(opacity=0);opacity: 0;outline: none;background: white;cursor: inherit;display: block;}
 .uplod-file:hover, .uplod-file:focus {color: #fff;background-color: rgb(100, 163, 199);}
