@@ -1,7 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%------------------------------------------------------------%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,8 +7,9 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/profileDesireList.css">
     <link rel="stylesheet" href="css/profile_bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <header>
@@ -27,14 +24,79 @@
             </div>
             <a href="index.html" class="menu-item menu-item-1">Home</a>
             <a href="dreams.html" class="menu-item menu-item-1">Dreams</a>
-            <a href="profile.html" class="menu-item menu-item-1">Profile</a>
+            <a href="desireList.jsp.jsp" class="menu-item menu-item-1">Profile</a>
             <button class="menu-item menu-item-logOut">Log out</button>
         </div>
     </div>
 </header>
-<div class="middle container">
-    <div class="user-data">
-    <section>
+ <div class="middle container">
+   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css"
+integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
+
+
+<!--search box-->
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Search Section</h4>
+        </div>
+        <div class="modal-body">
+
+
+
+
+
+         <section class="search-box1" id="panel">
+  <div class="container">
+    <form class="form-inline" role="form">
+      <div class="col-sm-8 col-xs-8 form-group top_search" style="padding-right:0px;">
+        <div class="row">
+          <label class="sr-only" for="search">Search here...</label>
+          <span class="serach-footer"><img src="images/srch.png" /></span>
+          <input type="text" class="form-control search-wrap" id="search" placeholder="Search here...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 col-xs-4 form-group top_search" style="padding-left:0px;">
+          <button type="submit" class="btn btn-default search-btn">SEARCH</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+        </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
 
 <div class="container" style="margin-top: 30px;">
 <div class="profile-head">
@@ -46,11 +108,11 @@
 
 <div class="col-md-5 col-sm-5 col-xs-12">
 <h5>Jenifer Smith</h5>
-
+<p>Web Designer / Develpor </p>
 <ul>
-<!-- <li><span class="glyphicon glyphicon-briefcase"></span> 5 years</li> -->
+<li><span class="glyphicon glyphicon-briefcase"></span> 5 years</li>
 <li><span class="glyphicon glyphicon-map-marker"></span> U.S.A.</li>
-<!-- <li><span class="glyphicon glyphicon-home"></span> 555 street Address,toedo 43606 U.S.A.</li> -->
+<li><span class="glyphicon glyphicon-home"></span> 555 street Address,toedo 43606 U.S.A.</li>
 <li><span class="glyphicon glyphicon-phone"></span> <a href="#" title="call">(+021) 956 789123</a></li>
 <li><span class="glyphicon glyphicon-envelope"></span><a href="#" title="mail">jenifer123@gmail.com</a></li>
 
@@ -67,7 +129,7 @@
 
 
 <div id="sticky" class="container">
-    
+
     <!-- Nav tabs -->
     <ul class="nav nav-tabs nav-menu" role="tablist">
       <li class="active">
@@ -80,14 +142,14 @@
           </a>
       </li>
     </ul><!--nav-tabs close-->
-    
+
     <!-- Tab panes -->
     <div class="tab-content">
     <div class="tab-pane fade active in" id="profile">
     <div class="container">
 <div class="col-sm-11" style="float:left;">
 <div class="hve-pro">
-<p>Hello I’m Jenifer Smith, a leading expert in interactive and creative design specializing in the mobile medium. 
+<p>Hello I’m Jenifer Smith, a leading expert in interactive and creative design specializing in the mobile medium.
 My graduation from Massey University with a Bachelor of Design majoring in visual communication.</p>
 </div><!--hve-pro close-->
 </div><!--col-sm-12 close-->
@@ -103,25 +165,25 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 <div class="table-responsive responsiv-table">
   <table class="table bio-table">
       <tbody>
-     <tr>      
+     <tr>
         <td>Firstname</td>
-        <td>: jenifer</td> 
+        <td>: jenifer</td>
      </tr>
-     <tr>    
+     <tr>
         <td>Lastname</td>
-        <td>: smith</td>       
+        <td>: smith</td>
      </tr>
-     <tr>    
+     <tr>
         <td>Birthday</td>
-        <td>: 10 january 1980</td>       
+        <td>: 10 january 1980</td>
     </tr>
-    <tr>    
+    <tr>
         <td>Contury</td>
-        <td>: U.S.A.</td>       
+        <td>: U.S.A.</td>
     </tr>
     <tr>
         <td>Occupation</td>
-        <td>: Web Designer</td> 
+        <td>: Web Designer</td>
      </tr>
 
     </tbody>
@@ -134,17 +196,25 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 <div class="table-responsive responsiv-table">
   <table class="table bio-table">
       <tbody>
-     <tr>  
+     <tr>
         <td>Emai Id</td>
-        <td>: jenifer123@gmail.com</td> 
+        <td>: jenifer123@gmail.com</td>
      </tr>
-     <tr>    
+     <tr>
+        <td>Mobile</td>
+        <td>: (+6283) 456 789</td>
+     </tr>
+     <tr>
         <td>Phone</td>
-        <td>: (+021) 956 789123</td>       
+        <td>: (+021) 956 789123</td>
+    </tr>
+    <tr>
+        <td>Experience</td>
+        <td>: 5 years</td>
     </tr>
     <tr>
         <td>Twiter</td>
-        <td>#@jenifer123</td> 
+        <td>#@jenifer123</td>
      </tr>
 
     </tbody>
@@ -159,6 +229,7 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 </div><!--container close-->
 </div><!--tab-pane close-->
+
 
 <div class="tab-pane fade" id="change">
 <div class="container fom-main">
@@ -176,7 +247,7 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 
 <div class="form-group col-md-12">
-  <label class="col-md-10 control-label">First Name</label>  
+  <label class="col-md-10 control-label">First Name</label>
   <div class="col-md-12 inputGroupContainer">
   <div class="input-group">
   <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
@@ -187,7 +258,7 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 <!-- Text input-->
 
 <div class="form-group col-md-12">
-  <label class="col-md-10 control-label" >Last Name</label> 
+  <label class="col-md-10 control-label" >Last Name</label>
     <div class="col-md-12 inputGroupContainer">
     <div class="input-group">
   <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
@@ -197,7 +268,7 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 <!-- Text input-->
        <div class="form-group col-md-12">
-  <label class="col-md-10 control-label">E-Mail</label>  
+  <label class="col-md-10 control-label">E-Mail</label>
     <div class="col-md-12 inputGroupContainer">
     <div class="input-group">
   <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
@@ -207,9 +278,9 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 
 <!-- Text input-->
-       
+
 <div class="form-group col-md-12">
-  <label class="col-md-10 control-label">Phone #</label>  
+  <label class="col-md-10 control-label">Phone #</label>
     <div class="col-md-12 inputGroupContainer">
     <div class="input-group">
   <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
@@ -218,7 +289,7 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 </div>
 
 <!-- Text input-->
-      
+
  <div class="form-group col-md-12">
   <label class="col-md-10 control-label">Address</label>
     <div class="col-md-12 inputGroupContainer">
@@ -239,13 +310,92 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 
 
+<div class="form-group col-md-12">
+  <label class="col-md-10 control-label">Industry</label>
+    <div class="col-md-12 selectContainer">
+    <div class="input-group">
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Industry</option>
+      <option>Industry</option>
+      <option>Industry</option>
+      <option>Industry</option>
+    </select>
+  </div>
+</div>
+</div>
 
 
 <!-- Select Basic -->
 
+<div class="form-group col-md-12">
+  <label class="col-md-10 control-label">Qualification</label>
+    <div class="col-md-12 selectContainer">
+    <div class="input-group">
+    <select name="state" class="form-control selectpicker" >
+           <option value=" " >your Qualification</option>
+      <option>M.A.</option>
+      <option>B.A.</option>
+      <option >B.Ed</option>
+    </select>
+  </div>
+</div>
+</div>
 
 
 
+<div class="form-group col-md-12">
+  <label class="col-md-10 control-label">Expertise areas</label>
+    <div class="col-md-12 selectContainer">
+    <div class="input-group">
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Expertise areas</option>
+      <option>Expertise areas1</option>
+      <option>Expertise areas1</option>
+      <option>Expertise areas1</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<div class="form-group col-md-12">
+  <label class="col-md-10 control-label">Experience</label>
+    <div class="col-md-12 selectContainer">
+    <div class="input-group">
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >your Experience</option>
+      <option>1 year</option>
+      <option>2 years</option>
+      <option >3 years</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<div class="form-group col-md-12">
+  <label class="col-md-10 control-label">Salary expected</label>
+    <div class="col-md-12 selectContainer">
+    <div class="input-group">
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >your Salary expectation</option>
+      <option>50 thousand</option>
+      <option>30thousand</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<div class="form-group col-md-12">
+  <label class="col-md-10 control-label">Preferred Location</label>
+    <div class="col-md-12 selectContainer">
+    <div class="input-group">
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >your Preferred Location</option>
+      <option>Chandigarh</option>
+      <option>Chandigarh</option>
+    </select>
+  </div>
+</div>
+</div>
 
 <!--<div class="form-group col-md-12">
   <label class="col-md-10 control-label">Project Description</label>
@@ -259,7 +409,7 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 
 <div class="form-group col-md-12">
-  <label class="col-md-10 control-label">Choose Password</label>  
+  <label class="col-md-10 control-label">Choose Password</label>
   <div class="col-md-12 inputGroupContainer">
   <div class="input-group">
   <input  name="first_name" placeholder="Choose Password" class="form-control"  type="password">
@@ -270,7 +420,7 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 
 
 <div class="form-group col-md-12">
-  <label class="col-md-10 control-label">Confiram Password</label>  
+  <label class="col-md-10 control-label">Confiram Password</label>
   <div class="col-md-12 inputGroupContainer">
   <div class="input-group">
   <input  name="first_name" placeholder="Confiram Password" class="form-control"  type="password">
@@ -302,12 +452,12 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 <span class="btn btn-default uplod-file">
     Upload Photo <input type="file" />
 </span>
-<!-- <span class="btn btn-default uplod-file">
+<span class="btn btn-default uplod-file">
     Upload Resume <input type="file" />
-</span> -->
-<!-- <span class="btn btn-default uplod-file">
+</span>
+<span class="btn btn-default uplod-file">
     Upload Video <input type="file" />
-</span> -->
+</span>
 </div><!--uplod-picture close-->
 </div><!--col-md-12 close-->
 <!-- Button -->
@@ -321,18 +471,21 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
 </fieldset>
 </form>
 </div><!--row close-->
-</div><!--container close -->          
+</div><!--container close -->
 </div><!--tab-pane close-->
 </div><!--tab-content close-->
 </div><!--container close-->
 
 </section><!--section close-->
-<!--         <div class="user-photo-block">
+
+
+    <!-- <div class="user-data">
+        <div class="user-photo-block"> -->
             <!--<div class="photo-tool">
                 <span class="glyphicon glyphicon-plus-sign"></span>
                 <span class="glyphicon glyphicon-remove-sign"></span>
-            </div>
-            <div class="user-photo">
+            </div>-->
+            <!-- <div class="user-photo">
                 <div class="fa fa-user"></div>
             </div>
             <div class="photo-control">
@@ -370,46 +523,55 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
                     <span class="dealNumber">10</span>
                 </a>
             </div>
-        </div> -->
-
+        </div>
     </div>
     <div class="user-dreams table-responsive">
         <div class="dreamsList">
             My Dreams list
         </div>
-        <section>
-            <form method="post" action="desires?action=filter">
-                <div class="filter">
-                    <span class="fa fa-filter"></span>
-                    <input class="form-control" type="text" name="category" placeholder="Enter category" value="${desireCategory}">
-                    <button type="submit">Filter</button>
-                </div>
-            </form>
-            <table class="table table-striped" border="1" cellpadding="8" cellspacing="0">
-                <thead>
+        <table id="userDreamList" class="table table-striped">
+            <thead>
                 <tr>
-                    <th>Date</th>
-                    <th>Desire</th>
-                    <th>Barter</th>
-                    <th>Category</th>
-                    <th></th>
-                    <th><a href="desires?action=create"><span id="addDreamIcon" class="fa fa-plus"></span></a></th>
+                    <th>Data</th>
+                    <th>Name of dream</th>
+                    <th><span id="addDreamIcon" class="fa fa-plus"></span></th>
                 </tr>
-                </thead>
-                <c:forEach items="${desireList}" var="barter">
-                    <jsp:useBean id="barter" scope="page" type="dreamco.project.model.Desire"/>
-                    <tr>
-                        <td>${barter.dateTime.toLocalDate()} ${barter.dateTime.toLocalTime()}</td>
-                        <td>${barter.desireDescription}</td>
-                        <td>${barter.barterPropose}</td>
-                        <td>${barter.categories}</td>
-                        <td><a href="desires?action=update&id=${barter.id}"><span class="fa fa-edit"></span></a> </td>
-                        <td><a href="desires?action=delete&id=${barter.id}"><span class="fa fa-close"></span></a> </td>
-                    </tr>
-                </c:forEach>
+            </thead>
+            <tbody>
+                <!--appear to add dream-->
+                <!-- <tr id="addDreamForm">
+                  <td id="newDate"></td>
+                  <td>
+                    <input type="text" class="dreamName form-control" placeholder="Enter your dream">
+                    <textarea class="description" rows="3" cols="50" placeholder="Describe your dream"></textarea>
+                  </td>
+                  <td>
+                    <span id="addDreamFormCloseIcon" class="fa fa-close"></span>
+                    <span id="confirmDreamForm" class="fa fa-check"></span>
+                  </td>
+                </tr>
+                <!---->
+                <!-- <tr class="dream">
+                  <td class="dreamData">02.06.16</td>
+                  <td>
+                    <span class="dreamName">Flying</span>
+                    <span id="descriptionShow" class="fa fa-caret-down"></span>
+                    <span id="editShow" class="closed fa fa-edit"></span>
+                    <!---->
+                    <!-- <div class="aboutDream">something about</div> -->
+                    <!---->
+                    <!-- <form class="descriptionEdit">
+                      <textarea rows="3" cols="111" placeholder=""></textarea>
+                      <span class="fa fa-check"></span>
+                      <span class="delete fa fa-close"></span>
+                    </form>
+                    <!---->
+                  <!-- </td>
+                  <td><span class="delete fa fa-close"></span></td>
+                </tr>
+              </tbody>
             </table>
-        </section>
-    </div>
+          </div>   -->
 </div>
 <footer>
     <div class="footer-content container">
@@ -422,10 +584,6 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
                 <tr>
                     <td></td>
                     <td><span class="fa fa-user-circle-o"></span>Artem Vorov</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><span class="fa fa-user-circle-o"></span>Dmitry Lopata</td>
                 </tr>
             </table>
         </div>
@@ -452,60 +610,12 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-skype"></a>
             </div>
-        </div>
+        </div> -->
     </div>
 </footer>
-
 <!------------------------JS----------------------------->
 <script src="jquery/jquery-3.1.0.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
-<%------------------------------------------------------------%>
-<%--<html>
-<head>
-    <title>User barter</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dreams.css">
-</head>
-<body>
-<section>
-<h2><a href="index.html">Home</a></h2>
-<h2>User barter</h2>
-    <form method="post" action="desires?action=filter">
-        <dl>
-            <dt>Category:</dt>
-            <dd><input type="text" name="category" value="${desireCategory}"></dd>
-        </dl>
-        <button type="submit">Filter</button>
-    </form>
-    <hr>
-<a href="desires?action=create">Add barter</a>
-<hr>
-<table border="1" cellpadding="8" cellspacing="0">
-    <thead>
-    <tr>
-        <th>Date</th>
-        <th>Desire</th>
-        <th>Barter</th>
-        <th>Category</th>
-        <th></th>
-        <th></th>
-    </tr>
-    </thead>
-    <c:forEach items="${desireList}" var="barter">
-        <jsp:useBean id="barter" scope="page" type="dreamco.project.model.Desire"/>
-        <tr>
-            <td>${barter.dateTime.toLocalDate()} ${barter.dateTime.toLocalTime()}</td>
-            <td>${barter.desireDescription}</td>
-            <td>${barter.barterPropose}</td>
-            <td>${barter.categories}</td>
-            <td><a href="desires?action=update&id=${barter.id}">Update</a> </td>
-            <td><a href="desires?action=delete&id=${barter.id}">Delete</a> </td>
-        </tr>
-    </c:forEach>
-</table>
-</section>
-</body>
-</html>--%>
