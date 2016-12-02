@@ -16,11 +16,11 @@ import java.util.List;
  * Date: 19.09.2016
  */
 @Controller
-public class DesireRestController {
+public class DesireRestController { // Работает с авторизированными пользователями
     private static final Logger LOG = LoggerFactory.getLogger(DesireRestController.class);
 
     @Autowired
-    private DesireService service;
+    private DesireService service; // Подключает слой сервис
 
     public Desire get(int id) {
         int userId = AuthorizedUser.id();

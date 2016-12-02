@@ -1,5 +1,6 @@
-package dreamco.project.web;
+package ru.javawebinar.topjava.web;
 
+import dreamco.project.web.UserTestData;
 import dreamco.project.model.User;
 import dreamco.project.repository.UserRepository;
 import dreamco.project.util.exception.NotFoundException;
@@ -20,8 +21,8 @@ import static dreamco.project.web.UserTestData.USER;
 
 
 /**
- * temaprof
- * 28.09.2016.
+ * GKislin
+ * 13.03.2015.
  */
 @ContextConfiguration("classpath:spring/spring-app.xml")
 @RunWith(SpringJUnit4ClassRunner.class)

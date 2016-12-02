@@ -1,4 +1,4 @@
-package dreamco.project;
+package dreamco.project.web;
 
 
 import dreamco.project.model.Role;

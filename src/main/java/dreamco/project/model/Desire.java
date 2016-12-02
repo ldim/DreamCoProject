@@ -7,18 +7,22 @@ import java.time.LocalTime;
 /**
  * Created by temaprof on 19.09.2016.
  */
-public class Desire extends BaseEntity{ // Описание параметров бартера
+public class Desire extends BaseEntity { // Описание параметров бартера
 
-    private final LocalDateTime dateTime;
+    private LocalDateTime dateTime;
 
-    private final String desireDescription;
+    private String desireDescription;
 
-    private final String barterPropose;
+    private String barterPropose;
 
-    private final String categories;
+    private String categories;
 
     public String getCategories() {
         return categories;
+    }
+
+    public Desire() {
+
     }
 
     public Desire(LocalDateTime dateTime, String description, String barterPropose, String categories) {

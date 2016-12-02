@@ -1,6 +1,5 @@
 package dreamco.project.web;
 
-import dreamco.project.UserTestData;
 import dreamco.project.model.User;
 import dreamco.project.repository.UserRepository;
 import dreamco.project.util.exception.NotFoundException;
@@ -16,8 +15,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static dreamco.project.UserTestData.ADMIN;
-import static dreamco.project.UserTestData.USER;
+import static dreamco.project.web.UserTestData.ADMIN;
+import static dreamco.project.web.UserTestData.USER;
 
 
 public class InMemoryAdminRestControllerTest {

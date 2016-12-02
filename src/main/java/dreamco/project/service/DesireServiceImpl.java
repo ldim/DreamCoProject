@@ -14,9 +14,9 @@ import java.util.Collection;
  * Date: 19.09.2016
  */
 @Service
-public class DesireServiceImpl implements DesireService {
+public class DesireServiceImpl implements DesireService { // Отлавливает исключения в методах
     @Autowired
-    private DesireRepository repository;
+    private DesireRepository repository; // Подключает DAO
 
     @Override
     public Desire get(int id, int userId) {
