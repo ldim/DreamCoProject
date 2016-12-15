@@ -27,7 +27,7 @@
             </div>
             <a href="index.html" class="menu-item menu-item-1">Home</a>
             <a href="dreams.html" class="menu-item menu-item-1">Dreams</a>
-            <a href="profile.html" class="menu-item menu-item-1">Profile</a>
+            <a href="desires" class="menu-item menu-item-1">Profile</a>
             <button class="menu-item menu-item-logOut">Log out</button>
         </div>
     </div>
@@ -400,8 +400,8 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
                     <jsp:useBean id="barter" scope="page" type="dreamco.project.model.Desire"/>
                     <tr>
                         <td>${barter.dateTime.toLocalDate()} ${barter.dateTime.toLocalTime()}</td>
-                        <td>${barter.desireDescription}</td>
-                        <td>${barter.barterPropose}</td>
+                        <td>${barter.description}</td>
+                        <td>${barter.barter}</td>
                         <td>${barter.categories}</td>
                         <td><a href="desires?action=update&id=${barter.id}"><span class="fa fa-edit"></span></a> </td>
                         <td><a href="desires?action=delete&id=${barter.id}"><span class="fa fa-close"></span></a> </td>
@@ -498,8 +498,8 @@ My graduation from Massey University with a Bachelor of Design majoring in visua
         <jsp:useBean id="barter" scope="page" type="dreamco.project.model.Desire"/>
         <tr>
             <td>${barter.dateTime.toLocalDate()} ${barter.dateTime.toLocalTime()}</td>
-            <td>${barter.desireDescription}</td>
-            <td>${barter.barterPropose}</td>
+            <td>${barter.description}</td>
+            <td>${barter.barter}</td>
             <td>${barter.categories}</td>
             <td><a href="desires?action=update&id=${barter.id}">Update</a> </td>
             <td><a href="desires?action=delete&id=${barter.id}">Delete</a> </td>

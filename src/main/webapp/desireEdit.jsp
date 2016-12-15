@@ -25,11 +25,11 @@
          </dl>
          <dl>
              <dt>Desire description</dt>
-             <dd><input type="text" value="${desire.desireDescription}" name="description"></dd>
+             <dd><input type="text" value="${desire.description}" name="description"></dd>
          </dl>
          <dl>
              <dt>Barter propose</dt>
-             <dd><input type="text" value="${desire.barterPropose}" name="barter"></dd>
+             <dd><input type="text" value="${desire.barter}" name="barter"></dd>
          </dl>
          <dl>
              <dt>Category</dt>

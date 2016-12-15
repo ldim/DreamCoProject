@@ -72,7 +72,7 @@ h2.register {padding:10px 25px;text-transform:capitalize;font-size: 25px;color: 
 .fom-main { overflow:hidden;}
 
 legend {font-family: 'Bitter', serif;color:#ff3200;border-bottom:0px solid;}
-.main_form {background-color: #;}
+.main_form {background-color: #ff3200;} /* error */
 label.control-label {font-family: 'Noto Sans', sans-serif;font-weight: 100; margin-bottom:5px !important;
 text-align:left !important; text-transform:uppercase; color:#798288;}
 .submit-button {color: #fff;background-color: #64a3c7;width:190px;border: 0px solid;border-radius: 0px;transition:all ease 0.3s;margin: 5px;float:left;}
@@ -83,7 +83,7 @@ select.selectpicker { color:#99999c;}
 select.selectpicker option { color:#000 !important;}
 select.selectpicker option:first-child { color:#99999c;}
 .input-group { width:100%;}
-.uplod-picture {width: 100%; background-color:#;color: #fff; padding:20px 10px;margin-bottom:10px;}
+.uplod-picture {width: 100%; background-color:#ff3200;color: #fff; padding:20px 10px;margin-bottom:10px;} /* error */
 .uplod-file {
  position: relative;
  overflow: hidden;

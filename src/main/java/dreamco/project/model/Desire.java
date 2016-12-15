@@ -11,9 +11,9 @@ public class Desire extends BaseEntity { // Описание параметро�
 
     private LocalDateTime dateTime;
 
-    private String desireDescription;
+    private String description;
 
-    private String barterPropose;
+    private String barter;
 
     private String categories;
 
@@ -32,18 +32,34 @@ public class Desire extends BaseEntity { // Описание параметро�
     public Desire(Integer id, LocalDateTime dateTime, String desireDescription, String barterPropose, String categories) {
         super(id);
         this.dateTime = dateTime;
-        this.desireDescription = desireDescription;
-        this.barterPropose = barterPropose;
+        this.description = desireDescription;
+        this.barter = barterPropose;
         this.categories = categories;
     }
 
+
+    public void setDateTime(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public void setBarter(String barter) {
+        this.barter = barter;
+    }
+
+    public void setCategories(String categories) {
+        this.categories = categories;
+    }
 
     public LocalDateTime getDateTime() {
         return dateTime;
     }
 
-    public String getDesireDescription() {
-        return desireDescription;
+    public String getDescription() {
+        return description;
     }
 
 
@@ -55,8 +71,8 @@ public class Desire extends BaseEntity { // Описание параметро�
         return dateTime.toLocalTime();
     }
 
-    public String getBarterPropose() {
-        return barterPropose;
+    public String getBarter() {
+        return barter;
     }
 
 
@@ -65,8 +81,8 @@ public class Desire extends BaseEntity { // Описание параметро�
         return "Desire{" +
                 "id=" + id +
                 ", dateTime=" + dateTime +
-                ", desireDescription='" + desireDescription + '\'' +
-                ", barterPropose='" + barterPropose + '\'' +
+                ", description='" + description + '\'' +
+                ", barter='" + barter + '\'' +
                 ", categories='" + categories + '\'' +
                 '}';
     }

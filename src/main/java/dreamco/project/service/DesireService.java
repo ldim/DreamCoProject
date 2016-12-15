@@ -4,6 +4,7 @@ import dreamco.project.model.Desire;
 import dreamco.project.util.exception.NotFoundException;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * User: temaprof
@@ -14,7 +15,7 @@ public interface DesireService {
 
     void delete(int id, int userId) throws NotFoundException;
 
-    Collection<Desire> getAll(int userId);
+    List<Desire> getAll(int userId);
 
     Desire update(Desire desire, int userId) throws NotFoundException;
 

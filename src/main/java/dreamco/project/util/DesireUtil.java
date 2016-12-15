@@ -1,12 +1,10 @@
 package dreamco.project.util;
 
-import dreamco.project.model.Categories;
 import dreamco.project.model.Desire;
 
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Created by temaprof on 24.09.2016.
@@ -24,14 +22,13 @@ public class DesireUtil {
         return BARTER;
     }
 
-    public static List<Desire> getBARTERwithCollections(Collection<Desire> desires, int DEFAULT_BARTER) {
-
-        return desires.stream().collect(Collectors.toList());
+    public static List<Desire> getBARTERwithCollections(List<Desire> desires, int DEFAULT_BARTER) {
+        return desires;
     }
 
     public static List<Desire> getFilteredWithCategory(Collection<Desire> desires, String category) {
        // CategoriesUtil.categoryInitialize(Collections.synchronizedCollection(desires));
-        List<Desire> categoriesList = Collections.synchronizedList(CategoriesUtil.getCategory(category));
-        return categoriesList;
+       // List<Desire> categoriesList = Collections.synchronizedList(CategoriesUtil.getCategory(category));
+        return (List<Desire>) desires;
     }
 }

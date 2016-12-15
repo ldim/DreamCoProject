@@ -45,8 +45,8 @@ public class JdbcDesireRepositoryImpl implements DesireRepository {
     public Desire save(Desire userDesire, int userId) {
         MapSqlParameterSource map = new MapSqlParameterSource()
                 .addValue("id", userDesire.getId())
-                .addValue("description", userDesire.getDesireDescription())
-                .addValue("barter", userDesire.getBarterPropose())
+                .addValue("description", userDesire.getDescription())
+                .addValue("barter", userDesire.getBarter())
                 .addValue("categories", userDesire.getCategories())
                 .addValue("date_time", userDesire.getDateTime())
                 .addValue("user_id", userId);

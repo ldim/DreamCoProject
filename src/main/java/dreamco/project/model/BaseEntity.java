@@ -5,7 +5,7 @@ package dreamco.project.model;
  * Date: 19.09.2016
  */
 public class BaseEntity { // Класс для хранения сущностей
-    public static final int START_SEQ = 10000;
+    public static final int START_SEQ = 100000;
 
     protected Integer id;
 

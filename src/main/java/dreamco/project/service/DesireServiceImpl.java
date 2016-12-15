@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * User: temaprof
@@ -30,7 +31,7 @@ public class DesireServiceImpl implements DesireService { // Отлавлива�
 
 
     @Override
-    public Collection<Desire> getAll(int userId) {
+    public List<Desire> getAll(int userId) {
         return repository.getAll(userId);
     }
 

@@ -44,7 +44,8 @@ public class DesireServlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         String action = request.getParameter("action");
         if (action == null) {
-           final Desire desire = new Desire(LocalDateTime.parse(request.getParameter("dateTime")),
+            final Desire desire = new Desire(
+                    LocalDateTime.parse(request.getParameter("dateTime")),
                     request.getParameter("description"),
                     request.getParameter("barter"),
                     request.getParameter("category"));
@@ -73,18 +74,18 @@ public class DesireServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
 
-        if(action == null){
+        if (action == null) {
             LOG.info("getAll");
             request.setAttribute("desireList", desireController.getAll());
             request.getRequestDispatcher("/desireList.jsp").forward(request, response);
 
-        } else if("delete".equals(action)){
+        } else if ("delete".equals(action)) {
             int id = getId(request);
             LOG.info("Delete {}", id);
             desireController.delete(id);
             response.sendRedirect("desires");
 
-        } else if("create".equals(action) || "update".equals(action)){
+        } else if ("create".equals(action) || "update".equals(action)) {
             final Desire desire = action.equals("create") ?
                     new Desire(LocalDateTime.now().withNano(0).withSecond(0), "", "", "") :
                     desireController.get(getId(request));

@@ -66,7 +66,7 @@ public class InMemoryDesireRepositoryImpl implements DesireRepository {
     }
 
     @Override
-    public Collection<Desire> getAll(int userId) {
+    public List<Desire> getAll(int userId) {
         Map<Integer, Desire> desires = repository.get(userId);
         return desires == null ?
                 Collections.emptyList() :
