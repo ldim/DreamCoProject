@@ -30,7 +30,7 @@ public class InMemoryDesireRepositoryImpl implements DesireRepository {
     private AtomicInteger counter = new AtomicInteger(0);
 
     {
-        DesireUtil.BARTER.forEach(um -> save(um, USER_ID));
+       // DesireUtil.BARTER.forEach(um -> save(um, USER_ID));
 
         save(new Desire(LocalDateTime.of(2016, Month.JUNE, 1, 14, 0), "Админ desire", "Barter", Categories.DESIRE), ADMIN_ID);
         save(new Desire(LocalDateTime.of(2016, Month.JUNE, 1, 21, 0), "Админ desire", "Barter", Categories.JOB), ADMIN_ID);

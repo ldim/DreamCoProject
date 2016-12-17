@@ -15,252 +15,252 @@
 </head>
 <body>
 <div id="basicModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 
     <div class="container">
-	<div class="row">
-		<section>
-        <div class="wizard">
-            <div class="wizard-inner">
-                <div class="connecting-line"></div>
-                <ul class="nav nav-tabs" role="tablist">
+        <div class="row">
+            <section>
+                <div class="wizard">
+                    <div class="wizard-inner">
+                        <div class="connecting-line"></div>
+                        <ul class="nav nav-tabs" role="tablist">
 
-                    <li role="presentation" class="active">
-                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <li role="presentation" class="active">
+                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-folder-open"></i>
                             </span>
-                        </a>
-                    </li>
+                                </a>
+                            </li>
 
-                    <li role="presentation" class="disabled">
-                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <li role="presentation" class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-pencil"></i>
                             </span>
-                        </a>
-                    </li>
-                    <li role="presentation" class="disabled">
-                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                </a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
 
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-picture"></i>
                             </span>
-                        </a>
-                    </li>
+                                </a>
+                            </li>
 
-                    <li role="presentation" class="disabled">
-                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <li role="presentation" class="disabled">
+                                <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
                             <span class="round-tab">
                                 <i class="glyphicon glyphicon-ok"></i>
                             </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <form role="form">
-                <div class="tab-content">
-                    <div class="tab-pane active" role="tabpanel" id="step1">
-<div class="container">
-	<div class="row">
-        <div class="col-md-6">
-            <form action="" method="post" id="fileForm" role="form">
-
-            <!-- <div class="form-group">
-            <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
-                    <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/>
-            </div> -->
-
-             <div class="form-group">
-                <label for="firstname"><span class="req">* </span> First name: </label>
-                    <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
-                        <div id="errFirst"></div>
-            </div>
-
-             <div class="form-group">
-                <label for="lastname"><span class="req">* </span> Last name: </label>
-                    <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
-                        <div id="errLast"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="email"><span class="req">* </span> Email Address: </label>
-                    <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />
-                        <div class="status" id="status"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label>
-                    <input class="form-control" type="text" name="username" id = "txt" onkeyup = "Validate(this)" placeholder="minimum 6 letters" required />
-                        <div id="errLast"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="password"><span class="req">* </span> Password: </label>
-                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
-
-                <label for="password"><span class="req">* </span> Password Confirm: </label>
-                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
-                        <span id="confirmMessage" class="confirmMessage"></span>
-            </div>
-
-
-
-            </fieldset>
-            </form><!-- ends register form -->
-
-<script type="text/javascript">
-  document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
-</script>
-        </div><!-- ends col-6 -->
-
-
-
-	</div>
-
-</div>
-                        <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                                </a>
+                            </li>
                         </ul>
                     </div>
 
-                    <div class="tab-pane" role="tabpanel" id="step2">
-                    	<div class="container">
-	<div class="row">
-        <div class="col-md-6">
-            <form action="" method="post" id="fileForm" role="form">
-<div class="form-group">
-<label for="birthDate">
-<span class="req">* </span>
-  Date of Birth:
-  </label>
-<!--<div class="col-sm-9">-->
-<input type="date" id="birthDate" class="form-control">
-<!--</div>-->
-</div>
-            <div class="form-group">
-            <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
-                    <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/>
-            </div>
+                    <form role="form">
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="step1">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <form action="" method="post" id="fileForm" role="form">
 
-<div class="form-group">
-<label for="country">
-  <span class="req">* </span>
-  Country:
-  </label>
-                 <!-- <div class="col-sm-9">-->
-                        <select id="country" class="form-control">
-                            <option>Afghanistan</option>
-                            <option>Bahamas</option>
-                            <option>Cambodia</option>
-                            <option>Denmark</option>
-                            <option>Ecuador</option>
-                            <option>Fiji</option>
-                            <option>Gabon</option>
-                            <option>Haiti</option>
-                        </select>
-                    </div>
+                                                <!-- <div class="form-group">
+                                                <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
+                                                        <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/>
+                                                </div> -->
 
-                    <div class="form-group">
-                <label for="email"><span class="req">* </span> Email Address: </label>
-                    <input class="form-control" required="" type="text" name="email" id="email" onchange="email_validate(this.value);">
-                        <div class="status" id="status"></div>
-            </div>
+                                                <div class="form-group">
+                                                    <label for="name"><span class="req">* </span> First name: </label>
+                                                    <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
+                                                    <div id="errFirst"></div>
+                                                </div>
 
-                <div class="form-group">
-                    <label for="info"><span class="req">* </span> Some information about you: </label>
-                    <textarea rows="4" cols="75" name="text" style="border: 1px solid  #ccc; border-radius: 3px"></textarea>
-                </div>
+                                                <div class="form-group">
+                                                    <label for="lastname"><span class="req">* </span> Last name: </label>
+                                                    <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
+                                                    <div id="errLast"></div>
+                                                </div>
 
+                                                <div class="form-group">
+                                                    <label for="email"><span class="req">* </span> Email Address: </label>
+                                                    <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />
+                                                    <div class="status" id="status"></div>
+                                                </div>
 
-            <!--<div class="form-group">
-                <label for="firstname"><span class="req">* </span> First name: </label>
-                    <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
-                        <div id="errFirst"></div>-
-            </div>-->
+                                                <div class="form-group">
+                                                    <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label>
+                                                    <input class="form-control" type="text" name="username" id = "txt" onkeyup = "Validate(this)" placeholder="minimum 6 letters" required />
+                                                    <div id="errLast"></div>
+                                                </div>
 
-<!--             <div class="form-group">
-                <label for="lastname"><span class="req">* </span> Last name: </label>
-                    <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
-                        <div id="errLast"></div>
-            </div> -->
+                                                <div class="form-group">
+                                                    <label for="password"><span class="req">* </span> Password: </label>
+                                                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
 
-            <!--<div class="form-group">
-                 <label for="email"><span class="req">* </span> Email Address: </label>
-                    <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />
-                        <div class="status" id="status"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label>
-                    <input class="form-control" type="text" name="username" id = "txt" onkeyup = "Validate(this)" placeholder="minimum 6 letters" required />
-                        <div id="errLast"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="password"><span class="req">* </span> Password: </label>
-                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
-
-                <label for="password"><span class="req">* </span> Password Confirm: </label>
-                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
-                        <span id="confirmMessage" class="confirmMessage"></span>
-            </div> -->
-
-
-            </fieldset>
-            </form><!-- ends register form -->
-
-<script type="text/javascript">
-  document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
-</script>
-        </div><!-- ends col-6 -->
+                                                    <label for="password"><span class="req">* </span> Password Confirm: </label>
+                                                    <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
+                                                    <span id="confirmMessage" class="confirmMessage"></span>
+                                                </div>
 
 
 
-	</div>
-</div>
+                                                </fieldset>
+                                            </form><!-- ends register form -->
+
+                                            <script type="text/javascript">
+                                                document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
+                                            </script>
+                                        </div><!-- ends col-6 -->
 
 
 
-                        <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                        </ul>
+                                    </div>
 
-                    </div>
+                                </div>
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                                </ul>
+                            </div>
 
-                    <div class="tab-pane" role="tabpanel" id="step3">
-                        <img class="avatar_upload" src="images/avatar_upload.png" >
+                            <div class="tab-pane" role="tabpanel" id="step2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <form action="" method="post" id="fileForm" role="form">
+                                                <div class="form-group">
+                                                    <label for="birthDate">
+                                                        <span class="req">* </span>
+                                                        Date of Birth:
+                                                    </label>
+                                                    <!--<div class="col-sm-9">-->
+                                                    <input type="date" id="birthDate" class="form-control">
+                                                    <!--</div>-->
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="phonenumber"><span class="req">* </span> Phone Number: </label>
+                                                    <input required type="text" name="phonenumber" id="phone" class="form-control phone" maxlength="28" onkeyup="validatephone(this);" placeholder="not used for marketing"/>
+                                                </div>
 
-                        <div class="file-upload">
-                            <label>
-                                <input type="file" name="file">
-                                <span>Upload</span>
-                            </label>
+                                                <div class="form-group">
+                                                    <label for="country">
+                                                        <span class="req">* </span>
+                                                        Country:
+                                                    </label>
+                                                    <!-- <div class="col-sm-9">-->
+                                                    <select id="country" class="form-control">
+                                                        <option>Afghanistan</option>
+                                                        <option>Bahamas</option>
+                                                        <option>Cambodia</option>
+                                                        <option>Denmark</option>
+                                                        <option>Ecuador</option>
+                                                        <option>Fiji</option>
+                                                        <option>Gabon</option>
+                                                        <option>Haiti</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="email"><span class="req">* </span> Email Address: </label>
+                                                    <input class="form-control" required="" type="text" name="email" id="email" onchange="email_validate(this.value);">
+                                                    <div class="status" id="status"></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="info"><span class="req">* </span> Some information about you: </label>
+                                                    <textarea rows="4" cols="75" name="text" style="border: 1px solid  #ccc; border-radius: 3px"></textarea>
+                                                </div>
+
+
+                                                <!--<div class="form-group">
+                                                    <label for="firstname"><span class="req">* </span> First name: </label>
+                                                        <input class="form-control" type="text" name="firstname" id = "txt" onkeyup = "Validate(this)" required />
+                                                            <div id="errFirst"></div>-
+                                                </div>-->
+
+                                                <!--             <div class="form-group">
+                                                                <label for="lastname"><span class="req">* </span> Last name: </label>
+                                                                    <input class="form-control" type="text" name="lastname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />
+                                                                        <div id="errLast"></div>
+                                                            </div> -->
+
+                                                <!--<div class="form-group">
+                                                     <label for="email"><span class="req">* </span> Email Address: </label>
+                                                        <input class="form-control" required type="text" name="email" id = "email"  onchange="email_validate(this.value);" />
+                                                            <div class="status" id="status"></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label>
+                                                        <input class="form-control" type="text" name="username" id = "txt" onkeyup = "Validate(this)" placeholder="minimum 6 letters" required />
+                                                            <div id="errLast"></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="password"><span class="req">* </span> Password: </label>
+                                                        <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
+
+                                                    <label for="password"><span class="req">* </span> Password Confirm: </label>
+                                                        <input required name="password" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
+                                                            <span id="confirmMessage" class="confirmMessage"></span>
+                                                </div> -->
+
+
+                                                </fieldset>
+                                            </form><!-- ends register form -->
+
+                                            <script type="text/javascript">
+                                                document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
+                                            </script>
+                                        </div><!-- ends col-6 -->
+
+
+
+                                    </div>
+                                </div>
+
+
+
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                    <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                                    <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="tab-pane" role="tabpanel" id="step3">
+                                <img class="avatar_upload" src="images/avatar_upload.png" >
+
+                                <div class="file-upload">
+                                    <label>
+                                        <input type="file" name="file">
+                                        <span>Upload</span>
+                                    </label>
+                                </div>
+                                <!-- your server code `avatar_upload.php` will receive `$_FILES['avatar']` on form submission -->
+
+                                <!-- the fileinput plugin initialization -->
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                    <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                                    <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="complete">
+                                <h3>Complete</h3>
+                                <p>You have successfully completed all steps.</p>
+                            </div>
+
+                            <div class="clearfix"></div>
                         </div>
-                        <!-- your server code `avatar_upload.php` will receive `$_FILES['avatar']` on form submission -->
-
-                        <!-- the fileinput plugin initialization -->
-                        <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" role="tabpanel" id="complete">
-                        <h3>Complete</h3>
-                        <p>You have successfully completed all steps.</p>
-                    </div>
-
-                    <div class="clearfix"></div>
+                    </form>
                 </div>
-            </form>
+            </section>
         </div>
-    </section>
-   </div>
-</div>
+    </div>
 </div>
 <div id="logInModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
@@ -270,21 +270,29 @@
     <div class="modal-body">
         <table>
             <tr>
-                <td>Email:</td>
-                <td><input type="email" class="form-control" placeholder="Enter your email"></td>
+                <form method="post" action="users">
+                    <b>Choose user: &nbsp;</b>
+                    <select name="userId">
+                        <option value="100000">User</option>
+                        <option value="100001">Admin</option>
+                    </select>
+                    <button type="submit">Sign in</button>
+                </form>
+                <!--<td>Email:</td>-->
+                <!--<td><input type="email" class="form-control" placeholder="Enter your email"></td>-->
             </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" class="form-control" placeholder="Enter your password"></td>
-            </tr>
+            <!--<tr>-->
+            <!--<td>Password</td>-->
+            <!--<td><input type="password" class="form-control" placeholder="Enter your password"></td>-->
+            <!--</tr>-->
         </table>
-    </div> -->
-    <div class="modal-footer">
-        <!--
-                <a href="#" class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</a>
-        -->
-        <a href="profile.html" class="btn btn-primary">Sign in</a>
     </div>
+    <!--<div class="modal-footer">-->
+    <!--&lt;!&ndash;-->
+    <!--<a href="#" class="btn" type="button" data-dismiss="modal" aria-hidden="true">Close</a>-->
+    <!--&ndash;&gt;-->
+    <!--&lt;!&ndash;<a href="desires" class="btn btn-primary">Sign in</a>&ndash;&gt;-->
+    <!--</div>-->
 </div>
 <header>
     <div class="menu">
@@ -305,14 +313,14 @@
     </div>
     </div>
     <div class="container">
-    <div class="topBigText">
-        <div class="topBigText-container">
-            <!--<div class="happy">Happy</div><br>-->
-            <!--<div class="like">like an</div><br>-->
-            <!--<div class="elephant">Elephant</div>-->
-            <img src ="images/elephant_text.png" style="width:400px; height: 200px">
+        <div class="topBigText">
+            <div class="topBigText-container">
+                <!--<div class="happy">Happy</div><br>-->
+                <!--<div class="like">like an</div><br>-->
+                <!--<div class="elephant">Elephant</div>-->
+                <img src ="images/elephant_text.png" style="width:400px; height: 200px">
+            </div>
         </div>
-    </div>
     </div>
 </header>
 <div class="middle">
@@ -380,17 +388,17 @@
             <!---------------------------------------Block-6-↑------------------------------------->
         </div>
         <!---------------------------------------------------------->
-         <div class="project">
-            <hr>
-            <form method="post" action="users">
-                <b>Desire list of&nbsp;</b>
-                <select name="userId">
-                    <option value="100000">User</option>
-                    <option value="100001">Admin</option>
-                </select>
-                <button type="submit">Select</button>
-            </form>
-        </div>
+        <!--<div class="project">-->
+        <!--<hr>-->
+        <!--<form method="post" action="users">-->
+        <!--<b>Desire list of&nbsp;</b>-->
+        <!--<select name="userId">-->
+        <!--<option value="100000">User</option>-->
+        <!--<option value="100001">Admin</option>-->
+        <!--</select>-->
+        <!--<button type="submit">Select</button>-->
+        <!--</form>-->
+        <!--</div>-->
     </div>
 </div>
 <footer>

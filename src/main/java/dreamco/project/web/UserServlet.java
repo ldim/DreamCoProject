@@ -21,6 +21,8 @@ public class UserServlet extends HttpServlet {
         int userId = Integer.valueOf(request.getParameter("userId"));
         AuthorizedUser.setId(userId);
         response.sendRedirect("desires");
+
+        String password = request.getParameter("password");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
