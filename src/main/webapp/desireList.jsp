@@ -28,7 +28,7 @@
             <a href="index.html" class="menu-item menu-item-1">Home</a>
             <a href="dreams.html" class="menu-item menu-item-1">Dreams</a>
             <a href="desires" class="menu-item menu-item-1">Profile</a>
-            <a href="index.html" class="menu-item menu-item-1">Log out</a>
+            <a href="index.html" class="menu-item menu-item-logOut">Log out</a>
             <%--<button class="menu-item menu-item-logOut">Log out</button>--%>
         </div>
     </div>
@@ -136,7 +136,7 @@
                                         <table class="table bio-table">
                                             <tbody>
                                             <tr>
-                                                <td>Emai Id</td>
+                                                <td>Email</td>
                                                 <td>: jenifer123@gmail.com</td>
                                             </tr>
                                             <tr>
